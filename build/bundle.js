@@ -61,10 +61,6 @@
 
 	var _reactDom = __webpack_require__(33);
 
-	var _router = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./router.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _router2 = _interopRequireDefault(_router);
-
 	var _reactRouter = __webpack_require__(167);
 
 	var _Nav = __webpack_require__(226);

@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import RouteManager from './router.jsx';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 import Nav from 'components/layout/Nav.jsx'; 
