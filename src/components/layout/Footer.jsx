@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+require('../../styles/footer.scss');
+
 class Footer extends React.Component {
 
 	constructor(props) {

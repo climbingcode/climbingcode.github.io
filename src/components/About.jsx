@@ -1,5 +1,9 @@
 import React from 'react';
 
+import content from 'config/content.json';
+
+import 'styles/about.scss'
+
 class About extends React.Component {
 
 	constructor(props) {
@@ -8,7 +12,9 @@ class About extends React.Component {
 
 	render() {
 		return (
-			<div>This is about me</div>
+			<div className="about">
+				<p>{content.about.description}</p>
+			</div>
 		)
 	}
 

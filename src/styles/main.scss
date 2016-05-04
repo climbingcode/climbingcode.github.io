@@ -1,6 +1,60 @@
-$background-image: '../images/background.jpeg';
+@import './mixins';
+
+$background-image: '../images/space.jpeg';
 $mountains-image: '../images/mountains.jpeg';
 
 body {
-	background: black;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	section {
+		overflow: hidden;
+		height: 100vh;
+    	width: 95vw;
+		position: relative;
+    	margin: 0 auto;
+    	background: url($background-image) 0 -2000px no-repeat;
+    	background-size: cover;
+    	image-rendering: crisp-edges;
+		.close-mountains {
+    		position: absolute;
+    		width: 100px;
+    		height: 100px;
+    		background: blue;
+    		top: 50;
+    		right: 50;
+    	}
+    	.mountains {
+			position: absolute;
+			bottom: -268px;
+		    height: 30vw;
+		    width: 100%;
+		    background: url($mountains-image) 0 0 no-repeat;
+		    background-size: cover;
+        	@include drop-shadow(-1px, -48px, 49px, #222);
+  			@include transition(bottom, 1s, ease-in);
+  			&.expanded {
+  				bottom: 10vw;
+  			}
+  			> div {
+				position: relative;
+    			top: 290px;
+    			height: 1500px;
+    			background: #000;
+  			}
+		}
+		.mountains-enter {
+ 			opacity: 0.01;
+ 		}
+		.mountains-enter.mountains-enter-active {
+ 			opacity: 1;
+ 			transition: opacity 2s ease-in;
+ 		}
+	}
+	content {
+		clear: both;
+	}
+	a {
+		color: #fff;
+	}
 }

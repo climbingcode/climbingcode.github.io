@@ -17,13 +17,20 @@ function loaders() {
       },
       {
         test: /\.scss$/,
-        include: /src/,
-        loaders: [
-          'style',
-          'css',
-          'sass?outputStyle=expanded'
-        ]
+        loader: 'style!css!sass?sourceMap'
       },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=public/fonts/[name].[ext]'
+      },
+      {
+        test: /\.jpe?g$|\.gif$|\.png$/i,
+        loader: "url-loader?limit=8192"
+      },
+      {
+        test: /\.json$/,
+        loader: "json"
+      }
     ]
   };
 }

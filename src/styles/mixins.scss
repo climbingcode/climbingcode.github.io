@@ -1,0 +1,20 @@
+
+// ============
+// TRANSITIONS
+// ============
+
+@mixin transition($elements, $speed, $effect) {
+	transition: $elements $speed $effect;
+	-webkit-transition: $elements $speed $effect;
+}
+
+// =============
+// DROP SHADOWS
+// =============
+
+@mixin drop-shadow($h-shadow, $v-shadow, $spread, $color) {
+	filter: drop-shadow($h-shadow $v-shadow $spread $color);
+	-webkit-filter: drop-shadow($h-shadow $v-shadow $spread $color);
+}
+
+

@@ -1,0 +1,29 @@
+nav {
+	height: 200px;
+	> div {
+		width: 300px;
+		margin: 0 5px;
+		display: inline-block;
+		vertical-align: top;
+		font-family: 'Skinny-Regular';
+	}
+	.links {
+		float: left;
+		a {
+			margin: 0 5px;
+			font-size: 40px;
+		}
+	}
+	.title {
+		float: right;
+		width: 372px;
+		h4 {
+			margin: 0;
+			font-size: 100px;
+		}
+		p {
+			margin: 5px 0;
+			font-size: 60px;
+		}
+	}
+}

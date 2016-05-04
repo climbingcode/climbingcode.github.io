@@ -1,0 +1,27 @@
+.carousel {
+	position: fixed;
+    top: 20%;
+	right: 5%;
+    width: 90vw;
+	height: 25vw;
+    overflow: hidden;
+    > div {
+    	display: inline-block;
+    	vertical-align: top;
+    }
+    .arrow {
+		width: 5%;
+		height: 485px;
+		background: blue;
+	}
+    .viewPort {
+		position: relative;
+    	padding: 0;
+    	margin: 0 auto;
+    	width: 90%;
+    	height: 100%;
+    	img {
+			width: 100%;
+    	}
+    }
+}
