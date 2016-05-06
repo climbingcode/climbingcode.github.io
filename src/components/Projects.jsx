@@ -7,16 +7,22 @@ class Projects extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			images: content.projects.images
+			projects: content.projects
 		};
 	}
 
 	render() {
 
-		var imgSrc = this.state.images[this.props.currentIndex];
+		var project = this.state.projects[this.props.currentIndex];
 
 		return (
-			<img src={imgSrc}/>
+			<div>
+				<a href={project.link}>
+					<h5>{project.title}</h5>
+					<img src={project.imgSrc}/>
+					<p>{project.description}</p>
+				</a>
+			</div>
 		)
 	}
 

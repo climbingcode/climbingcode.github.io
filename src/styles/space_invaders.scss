@@ -1,7 +1,30 @@
-.invader {
-	display: inline-block;
-	margin-right: 5px;
-	width: 200px;
-	height: 200px;
-	background: #fff;
+.space-invaders {
+	position: absolute;
+	.invaders-group {
+		position: absolute;
+		width: 1500px;
+		z-index: -100;
+		.invader {
+			display: inline-block;
+			margin: 20px;
+			&.hit {
+				background: red;
+			}
+		}
+	}
+	.invader-gun {
+		width: 100px;
+		height: 100px;
+		background: #fff;
+		position: fixed;
+		z-index: 1000;
+		bottom: 0;
+		left: 10;
+	}
+	.bullet {
+		position: fixed;
+		width: 5px;
+		height: 5px;
+		background: #fff;
+	}
 }

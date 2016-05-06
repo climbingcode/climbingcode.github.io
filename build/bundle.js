@@ -99,17 +99,21 @@
 
 	var _Carousel2 = _interopRequireDefault(_Carousel);
 
-	var _BlackHole = __webpack_require__(249);
+	var _BlackHole = __webpack_require__(250);
 
 	var _BlackHole2 = _interopRequireDefault(_BlackHole);
 
-	var _SpaceInvaders = __webpack_require__(252);
+	var _Stars = __webpack_require__(253);
+
+	var _Stars2 = _interopRequireDefault(_Stars);
+
+	var _SpaceInvaders = __webpack_require__(254);
 
 	var _SpaceInvaders2 = _interopRequireDefault(_SpaceInvaders);
 
-	__webpack_require__(253);
+	__webpack_require__(257);
 
-	__webpack_require__(256);
+	__webpack_require__(260);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -214,6 +218,7 @@
 						null,
 						childrenNodes
 					),
+					_react2.default.createElement(_Stars2.default, null),
 					_react2.default.createElement(_Footer2.default, null)
 				);
 			}
@@ -26262,22 +26267,132 @@
 		"about": {
 			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
 		},
-		"projects": {
-			"images": [
-				"http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b",
-				"http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b"
-			]
-		},
-		"skills": {
-			"images": [
-				"http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b",
-				"http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b"
-			]
-		}
+		"projects": [
+			{
+				"title": "this is the title one",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
+				"link": "http://www.google.com"
+			},
+			{
+				"title": "this is the title two",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+				"imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b",
+				"link": "http://www.google.com"
+			},
+			{
+				"title": "this is the title three",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
+				"link": "http://www.google.com"
+			},
+			{
+				"title": "this is the title four",
+				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
+				"link": "http://www.google.com"
+			}
+		],
+		"skills": [
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "css",
+				"backgroundPosition": "-230px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "js",
+				"backgroundPosition": "-425px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			},
+			{
+				"title": "html",
+				"backgroundPosition": "-37px -20px",
+				"score": 60,
+				"width": 167,
+				"height": 216
+			}
+		]
 	};
 
 /***/ },
@@ -26358,7 +26473,16 @@
 		_createClass(Skills, [{
 			key: 'render',
 			value: function render() {
-				return _react2.default.createElement('div', { className: 'skills' });
+
+				var skill = this.props.skill;
+
+				var divStyle = {
+					backgroundPosition: skill.backgroundPosition,
+					height: skill.height,
+					width: skill.width
+				};
+
+				return _react2.default.createElement('div', { className: 'skills', style: divStyle });
 			}
 		}]);
 
@@ -26402,7 +26526,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".skills {\n  background: url(/assets/f75ef4571512834ede9dbcd7eb4ecd30.png) no-repeat;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 	// exports
 
@@ -26444,7 +26568,7 @@
 			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).call(this, props));
 
 			_this.state = {
-				images: _content2.default.projects.images
+				projects: _content2.default.projects
 			};
 			return _this;
 		}
@@ -26453,9 +26577,27 @@
 			key: 'render',
 			value: function render() {
 
-				var imgSrc = this.state.images[this.props.currentIndex];
+				var project = this.state.projects[this.props.currentIndex];
 
-				return _react2.default.createElement('img', { src: imgSrc });
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'a',
+						{ href: project.link },
+						_react2.default.createElement(
+							'h5',
+							null,
+							project.title
+						),
+						_react2.default.createElement('img', { src: project.imgSrc }),
+						_react2.default.createElement(
+							'p',
+							null,
+							project.description
+						)
+					)
+				);
 			}
 		}]);
 
@@ -26582,11 +26724,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(246);
-
 	var _Projects = __webpack_require__(242);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
+
+	var _content = __webpack_require__(236);
+
+	var _content2 = _interopRequireDefault(_content);
+
+	__webpack_require__(246);
+
+	__webpack_require__(248);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26606,14 +26754,14 @@
 
 			_this.state = {
 				currentIndex: 0,
-				imagesLength: 4
+				imagesLength: _content2.default.projects.length
 			};
 			return _this;
 		}
 
 		_createClass(Carousel, [{
-			key: '_imagesCanMove',
-			value: function _imagesCanMove(direction) {
+			key: '_canImageMove',
+			value: function _canImageMove(direction) {
 				var currentIndex = this.state.currentIndex;
 				var imagesLength = this.state.imagesLength;
 				return direction ? currentIndex < imagesLength - 1 : currentIndex > 0;
@@ -26621,7 +26769,7 @@
 		}, {
 			key: '_moveToNextImage',
 			value: function _moveToNextImage(direction) {
-				if (!this._imagesCanMove(direction)) return;
+				if (!this._canImageMove(direction)) return;
 				var newImageIndex = direction ? this.state.currentIndex + 1 : this.state.currentIndex - 1;
 				this.setState({
 					currentIndex: newImageIndex
@@ -26634,21 +26782,13 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'carousel' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'arrow', onClick: this._moveToNextImage.bind(this, false) },
-						_react2.default.createElement('i', { 'class': 'fa fa-chevron-left', 'aria-hidden': 'true' })
-					),
+					_react2.default.createElement('div', { className: 'arrow chevron left', onClick: this._moveToNextImage.bind(this, false) }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'viewPort' },
 						_react2.default.createElement(_Projects2.default, { currentIndex: this.state.currentIndex })
 					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'arrow', onClick: this._moveToNextImage.bind(this, true) },
-						_react2.default.createElement('i', { 'class': 'fa fa-chevron-right', 'aria-hidden': 'true' })
-					)
+					_react2.default.createElement('div', { className: 'arrow chevron right', onClick: this._moveToNextImage.bind(this, true) })
 				);
 			}
 		}]);
@@ -26674,8 +26814,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./carousel.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./carousel.scss");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./icons.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./icons.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -26693,14 +26833,53 @@
 
 
 	// module
-	exports.push([module.id, ".carousel {\n  position: fixed;\n  top: 20%;\n  right: 5%;\n  width: 90vw;\n  height: 25vw;\n  overflow: hidden; }\n  .carousel > div {\n    display: inline-block;\n    vertical-align: top; }\n  .carousel .arrow {\n    width: 5%;\n    height: 485px;\n    background: blue; }\n  .carousel .viewPort {\n    position: relative;\n    padding: 0;\n    margin: 0 auto;\n    width: 90%;\n    height: 100%; }\n    .carousel .viewPort img {\n      width: 100%; }\n", ""]);
+	exports.push([module.id, ".chevron::before {\n  border-style: solid;\n  border-width: 0.25em 0.25em 0 0;\n  content: '';\n  display: inline-block;\n  height: 0.45em;\n  left: 0.15em;\n  position: relative;\n  top: 0.15em;\n  transform: rotate(-45deg);\n  vertical-align: top;\n  width: 0.45em; }\n\n.chevron.right:before {\n  left: 0;\n  transform: rotate(45deg); }\n\n.chevron.bottom:before {\n  top: 0;\n  transform: rotate(135deg); }\n\n.chevron.left:before {\n  left: 0.25em;\n  transform: rotate(-135deg); }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 248 */,
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(249);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./carousel.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./carousel.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".carousel {\n  position: fixed;\n  top: 20%;\n  right: 5%;\n  width: 90vw;\n  height: 30vw;\n  overflow: hidden; }\n  .carousel > div {\n    display: inline-block;\n    vertical-align: top; }\n  .carousel .arrow {\n    width: 5%;\n    height: 485px;\n    cursor: pointer; }\n    .carousel .arrow:before {\n      border-width: 1.25em 1.25em 0 0;\n      width: 3.45em;\n      height: 3.45em;\n      top: 14.15em; }\n    .carousel .arrow.chevron.left:before {\n      left: 16px; }\n    .carousel .arrow.chevron.right:before {\n      left: -7px; }\n  .carousel .viewPort {\n    position: relative;\n    padding: 0;\n    margin: 0 auto;\n    width: 90%;\n    height: 100%; }\n    .carousel .viewPort img {\n      max-width: 833px;\n      max-height: 833px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26715,7 +26894,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(250);
+	__webpack_require__(251);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26751,13 +26930,13 @@
 	exports.default = BlackHole;
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(251);
+	var content = __webpack_require__(252);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26777,7 +26956,7 @@
 	}
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26791,7 +26970,76 @@
 
 
 /***/ },
-/* 252 */
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Stars = function (_React$Component) {
+		_inherits(Stars, _React$Component);
+
+		function Stars(props) {
+			_classCallCheck(this, Stars);
+
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Stars).call(this, props));
+
+			_this.state = {
+				maxStars: 100
+			};
+			return _this;
+		}
+
+		_createClass(Stars, [{
+			key: "_getStars",
+			value: function _getStars() {
+				var i = 0;
+				var stars = [];
+				while (i < this.state.maxStars) {
+					var starX = Math.random() * window.innerWidth;
+					var starY = Math.random() * window.innerHeight;
+					var starStyle = { top: starY, left: starX };
+					var star = _react2.default.createElement("i", { className: "star", key: i, style: starStyle });
+					stars.push(star);
+					i++;
+				}
+				return stars;
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "stars" },
+					this._getStars.call(this)
+				);
+			}
+		}]);
+
+		return Stars;
+	}(_react2.default.Component);
+
+	exports.default = Stars;
+
+/***/ },
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26814,7 +27062,7 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(260);
+	__webpack_require__(255);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26830,37 +27078,160 @@
 		function SpaceInvaders(props) {
 			_classCallCheck(this, SpaceInvaders);
 
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(SpaceInvaders).call(this, props));
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SpaceInvaders).call(this, props));
+
+			_this.state = {
+				arrowKeys: {
+					left: 37,
+					up: 38,
+					right: 39,
+					space: 32
+				}
+			};
+			return _this;
 		}
 
 		_createClass(SpaceInvaders, [{
-			key: 'moveInvaders',
-			value: function moveInvaders() {}
+			key: 'hitBorder',
+			value: function hitBorder(direction, element, offSetMargin) {
+				if (direction === 'left') {
+					return element.offsetLeft > window.innerWidth - element.clientWidth - offSetMargin;
+				} else {
+					return element.offsetLeft < offSetMargin;
+				}
+			}
 		}, {
-			key: 'componentWillMount',
-			value: function componentWillMount() {
-				this.moveInvaders.call(this);
+			key: 'moveInvaders',
+			value: function moveInvaders() {
+				var invaders = this.refs.invaders;
+				var moveXBy = 5;
+				var moveYBy = 50;
+				var left = 0;
+				var top = 0;
+				this.direction = 'left';
+				this.movingInvaders = setInterval(function () {
+					if (this.hitBorder(this.direction, invaders, 10)) {
+						invaders.style.top = (top += moveYBy) + 'px';
+						this.direction = this.direction === 'left' ? 'right' : 'left';
+					} else {
+						if (this.direction === 'left') {
+							invaders.style.left = (left += moveXBy) + 'px';
+						} else {
+							invaders.style.left = (left -= moveXBy) + 'px';
+						}
+					}
+				}.bind(this), 100);
+			}
+		}, {
+			key: 'collison',
+			value: function collison(bullet) {
+
+				var collided = false;
+
+				this.invaders.forEach(function (invader, index) {
+
+					var invader = this.refs[invader];
+					var bulletsTop = bullet.offsetTop;
+					var bulletsLeft = bullet.offsetLeft;
+
+					var invaderParent = invader.parentNode;
+					var invaderParentLeft = invaderParent.offsetLeft;
+					var invaderParentTop = invaderParent.offsetTop;
+					var invaderTop = invaderParentTop + invader.offsetTop;
+					var invaderBottom = invaderTop + invader.offsetHeight;
+					var invaderBottomLeft = invaderParentLeft + invader.offsetLeft;
+					var invaderBottomRight = invaderBottomLeft + invader.clientWidth;
+
+					if (bulletsLeft > invaderBottomLeft && bulletsLeft < invaderBottomRight && bulletsTop < invaderBottom && bulletsTop > invaderTop && invader.className.indexOf('hit') === -1) {
+						console.log(invaderBottom, bulletsTop);
+						invader.className = 'invader hit';
+						collided = true;
+					}
+				}.bind(this));
+
+				return collided;
+			}
+		}, {
+			key: 'shotGun',
+			value: function shotGun(left) {
+				var bottom = this.refs.gun.clientHeight;
+				var bullet = document.createElement('div');
+				bullet.className = 'bullet';
+				bullet.style.left = left + this.refs.gun.clientWidth / 2 + 'px';
+				bullet.style.bottom = this.refs.gun.clientHeight + 'px';
+				this.refs.container.appendChild(bullet);
+				var moveBullet = setInterval(function () {
+					bullet.style.bottom = (bottom += 10) + 'px';
+					if (Math.abs(bottom) > window.innerHeight || this.collison.call(this, bullet)) {
+						clearInterval(moveBullet);
+						bullet.parentNode.removeChild(bullet);
+					}
+				}.bind(this), 50);
+			}
+		}, {
+			key: 'initGun',
+			value: function initGun() {
+
+				var top = 0;
+				var left = window.innerWidth / 2;
+				var gun = this.refs.gun;
+				var arrows = this.state.arrowKeys;
+
+				gun.style.left = window.innerWidth / 2 + 'px';
+
+				document.onkeydown = function (e) {
+
+					var e = e || window.event;
+
+					if (e.keyCode == arrows.up || e.keyCode == arrows.space) {
+						this.shotGun.call(this, left);
+					} else if (e.keyCode == arrows.right) {
+						if (this.hitBorder('left', gun, 70)) return;
+						gun.style.left = (left += 10) + 'px';
+					} else if (e.keyCode == arrows.left) {
+						if (this.hitBorder('right', gun, 70)) return;
+						gun.style.left = (left -= 10) + 'px';
+					}
+				}.bind(this);
+			}
+		}, {
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				// this.moveInvaders.call(this);
+				this.initGun.call(this);
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				clearInterval(this.movingInvaders);
+				document.onkeydown = null;
 			}
 		}, {
 			key: 'render',
 			value: function render() {
+				var _this2 = this;
 
-				var skills = _content2.default.skills.images.map(function (image, index) {
+				this.invaders = [];
+
+				var skills = _content2.default.skills.map(function (skill, index) {
+					var invader = 'invader-' + index;
+					_this2.invaders.push(invader);
 					return _react2.default.createElement(
 						'div',
-						{ className: 'invader', key: index },
-						_react2.default.createElement(_Skills2.default, { imageSrc: image })
+						{ className: 'invader', key: index, ref: invader },
+						_react2.default.createElement(_Skills2.default, { skill: skill })
 					);
 				});
 
 				return _react2.default.createElement(
 					'div',
-					{ className: 'space-invaders' },
+					{ className: 'space-invaders', ref: 'container' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'invaders-wrapper', ref: 'invaders' },
+						{ className: 'invaders-group', ref: 'invaders' },
 						skills
-					)
+					),
+					_react2.default.createElement('div', { className: 'invader-gun', ref: 'gun' })
 				);
 			}
 		}]);
@@ -26871,111 +27242,13 @@
 	exports.default = SpaceInvaders;
 
 /***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(254);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./fonts.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./fonts.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(229)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(255) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
-
-	// exports
-
-
-/***/ },
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "public/fonts/Skinny-Regular.ttf";
-
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(257);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./main.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./main.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(229)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body {\n  width: 100%;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    height: 100vh;\n    width: 95vw;\n    position: relative;\n    margin: 0 auto;\n    background: url(" + __webpack_require__(258) + ") 0 -2000px no-repeat;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -268px;\n      height: 30vw;\n      width: 100%;\n      background: url(" + __webpack_require__(259) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 10vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 290px;\n        height: 1500px;\n        background: #000; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "a7698e910f936c6a2876d28801418a20.jpeg";
-
-/***/ },
-/* 259 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
-
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(261);
+	var content = __webpack_require__(256);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26995,6 +27268,92 @@
 	}
 
 /***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".space-invaders {\n  position: absolute; }\n  .space-invaders .invaders-group {\n    position: absolute;\n    width: 1500px;\n    z-index: -100; }\n    .space-invaders .invaders-group .invader {\n      display: inline-block;\n      margin: 20px; }\n      .space-invaders .invaders-group .invader.hit {\n        background: red; }\n  .space-invaders .invader-gun {\n    width: 100px;\n    height: 100px;\n    background: #fff;\n    position: fixed;\n    z-index: 1000;\n    bottom: 0;\n    left: 10; }\n  .space-invaders .bullet {\n    position: fixed;\n    width: 5px;\n    height: 5px;\n    background: #fff; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(258);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./fonts.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./fonts.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 258 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(259) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/Skinny-Regular.ttf";
+
+/***/ },
+/* 260 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(261);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./main.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./main.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27003,10 +27362,17 @@
 
 
 	// module
-	exports.push([module.id, ".invader {\n  display: inline-block;\n  margin-right: 5px;\n  width: 200px;\n  height: 200px;\n  background: #fff; }\n", ""]);
+	exports.push([module.id, "body {\n  width: 100%;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    height: 100vh;\n    width: 95vw;\n    position: relative;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .star {\n      position: absolute;\n      width: 2px;\n      height: 2px;\n      background: #fff;\n      z-index: -1000;\n      -webkit-box-shadow: -1px -48px 49px #fff;\n      -moz-box-shadow: -1px -48px 49px #fff;\n      box-shadow: -1px -48px 49px #fff; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -268px;\n      height: 30vw;\n      width: 100%;\n      background: url(" + __webpack_require__(263) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 10vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 290px;\n        height: 1500px;\n        background: #000; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 262 */,
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
 
 /***/ }
 /******/ ]);

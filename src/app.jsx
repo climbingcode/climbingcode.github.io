@@ -14,6 +14,7 @@ import Blog from 'components/Blog.jsx';
 import Contact from 'components/Contact.jsx';
 import Carousel from 'components/Carousel.jsx';
 import BlackHole from 'components/BlackHole.jsx';
+import Stars from 'components/Stars.jsx';
 import SpaceInvaders from 'components/SpaceInvaders.jsx';
 
 // Fonts 
@@ -104,6 +105,7 @@ class Layout extends React.Component {
 				<content>
 					{ childrenNodes }			
 				</content>
+				<Stars/>
 				<Footer/>
 			</div>
 

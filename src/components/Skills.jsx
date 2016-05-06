@@ -9,8 +9,18 @@ class Skills extends React.Component {
 	}
 
 	render() {
+
+		var skill = this.props.skill;
+
+		var divStyle = {
+			backgroundPosition: skill.backgroundPosition,
+			height: skill.height,
+			width: skill.width
+		};
+
 		return (
-			<div className="skills"></div>
+			<div className="skills" style={divStyle}>
+			</div>
 		)
 	}
 

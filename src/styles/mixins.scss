@@ -17,4 +17,15 @@
 	-webkit-filter: drop-shadow($h-shadow $v-shadow $spread $color);
 }
 
+// ============
+// BOX SHADOW
+// ============
+
+@mixin box-shadow ($h-shadow, $v-shadow, $spread, $color) {
+	-webkit-box-shadow: $h-shadow $v-shadow $spread $color;
+	-moz-box-shadow: $h-shadow $v-shadow $spread $color;
+	box-shadow: $h-shadow $v-shadow $spread $color;
+}
+
+
 

@@ -1,6 +1,5 @@
 @import './mixins';
 
-$background-image: '../images/space.jpeg';
 $mountains-image: '../images/mountains.jpeg';
 
 body {
@@ -12,10 +11,17 @@ body {
 		height: 100vh;
     	width: 95vw;
 		position: relative;
-    	margin: 0 auto;
-    	background: url($background-image) 0 -2000px no-repeat;
+    	margin: 0 auto;    
     	background-size: cover;
     	image-rendering: crisp-edges;
+    	.star {
+    		position: absolute;
+    		width: 2px;
+    		height: 2px;
+    		background: #fff;
+    		z-index: -1000;
+    		@include box-shadow(-1px, -48px, 49px, #fff);
+    	}
 		.close-mountains {
     		position: absolute;
     		width: 100px;
