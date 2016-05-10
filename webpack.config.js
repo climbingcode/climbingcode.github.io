@@ -8,7 +8,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, "build"),
-        publicPath: "/",
+        publicPath: "/assets/",
         filename: "bundle.js"
     },
     module: defaultSettings.clientLoaders(),
