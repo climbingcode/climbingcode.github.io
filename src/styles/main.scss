@@ -1,0 +1,69 @@
+@import './mixins';
+
+$mountains-image: '../images/mountains.jpeg';
+
+body {
+	height: 100vh;
+    width: 99vw;
+	background: #000;
+	color: #fff;
+	section {
+		overflow: hidden; 
+		position: relative;
+        height: 100%;
+    	margin: 0 auto;    
+    	background-size: cover;
+    	image-rendering: crisp-edges;
+    	.star {
+    		position: absolute;
+    		width: 2px;
+    		height: 2px;
+    		background: #fff;
+    		z-index: -1000;
+    		@include box-shadow(-1px, -48px, 49px, #fff);
+    	}
+        .shooting-star {
+            z-index: 0;
+        }
+		.close-mountains {
+    		position: absolute;
+    		width: 100px;
+    		height: 100px;
+    		background: blue;
+    		top: 50;
+    		right: 50;
+    	}
+    	.mountains {
+			position: absolute;
+			bottom: -60vh;
+		    height: 90vh;
+		    width: 100%;
+            z-index: 100;
+		    background: url($mountains-image) 0 0 no-repeat;
+		    background-size: cover;
+        	@include drop-shadow(-1px, -48px, 49px, #222);
+  			@include transition(bottom, 1s, ease-in);
+  			&.expanded {
+  				bottom: 0vw;
+  			}
+  			> div {
+				position: relative;
+    			top: 30vh;
+    			height: 70vh;
+  			}
+		}
+		.mountains-enter {
+ 			opacity: 0.01;
+ 		}
+		.mountains-enter.mountains-enter-active {
+ 			opacity: 1;
+ 			transition: opacity 2s ease-in;
+ 		}
+	}
+	content {
+		clear: both;
+	}
+	a {
+		color: #fff;
+	}
+}

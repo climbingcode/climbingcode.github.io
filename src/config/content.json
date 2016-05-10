@@ -1,0 +1,106 @@
+{
+	"about": {
+		"description": "I’m a developer who lives and breaths code. I’ve been fortunate enough to work on a large range of projects. Including writing MVT / AB tests in Javascript / AngularJS for household known e-commerce sites, a web-app for the largest Learn to Code event in Canada and helping students at a local coding bootcamp as a Teaching Assistant. As mentioned, my latest position has me coding AB / MVT on sites in Javascript / CSS for a range of e-commerce / digital services. Where I work closely with designers and coordinators to run experiments on sites. These tests range rapidly in complexity and therefore require the ability to reverse engineer problems and having a solid understanding of the DOM, Javascript and CSS."
+	},
+	"projects": [
+		{
+			"title": "Cloverdale Business Improvement Agency",
+			"description": "Project built with Jekyll, Google maps API, jQuery and Sass/Bootstrap ",
+			"link": "http://www.cloverdalebia.com/",
+			"backgroundPosition": "0px -535px"
+		},
+		{
+			"title": "Brand Asset Manager App",
+			"description": "Built with Rails and jQuery",
+			"backgroundPosition": "0px 0px"
+		}
+	],		
+	"skills": [
+		{
+			"title": "html",
+			"backgroundPosition": "-29px -16px",
+			"score": 100,
+			"width": 128,
+    		"height": 172
+		},
+		{
+			"title": "css",
+			"backgroundPosition": "-189px -16px",
+			"score": 100,
+			"width": 127,
+    		"height": 174
+		},
+		{
+			"title": "js",
+			"backgroundPosition": "-336px -17px",
+			"score": 100,
+			"width": 127,
+    		"height": 174		
+    	},
+		{
+			"title": "react",
+    		"backgroundPosition": "-37px -200px",
+			"height": 123,
+    		"width": 127,
+			"score": 60
+		},
+		{
+			"title": "angular",
+			"backgroundPosition": "-190px -200px",
+			"score": 70,
+			"width": 123,
+    		"height": 129
+		},
+		{
+			"title": "rails",
+			"backgroundPosition": "-187px -338px",
+			"score": 70,
+			"width": 130,
+    		"height": 161
+		},
+		{
+			"title": "swift",
+			"backgroundPosition": "-482px -340px",
+			"score": 50,
+			"width": 124,
+    		"height": 127
+		},
+		{
+			"title": "php",
+			"backgroundPosition": "-13px -340px",
+			"score": 50,
+			"width": 173,
+    		"height": 87
+		},
+		{
+			"title": "git",
+			"backgroundPosition": "-493px -100px",
+			"score": 70,
+			"width": 169,
+    		"height": 73
+		},
+		{
+			"title": "node",
+			"backgroundPosition": "-546px -11px",
+			"score": 70,
+			"width": 195,
+    		"height": 67
+		},
+		{
+			"title": "photoshop",
+			"backgroundPosition": "-339px -200px",
+			"score": 50,
+			"width": 123,
+    		"height": 129
+		}
+	],
+	"INVADERS": {
+		"ARROWS": {
+			"LEFT": 37,
+			"UP": 38,
+			"RIGHT": 39,
+			"SPACE": 32
+		}
+	}
+	
+}

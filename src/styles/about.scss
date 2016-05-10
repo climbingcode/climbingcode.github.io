@@ -1,0 +1,16 @@
+$portrait: '../images/me.jpeg';
+
+.about {
+	margin: 0px 100px;
+	.me {
+    	width: 236px;
+		height: 236px;
+		margin: 0 30px;
+		float: left;
+		font-weight: 12px;
+		background: url($portrait) 0 0 no-repeat;
+	}
+	p {
+		font-family: 'pluto';
+	}
+}

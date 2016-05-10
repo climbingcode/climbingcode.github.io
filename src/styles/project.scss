@@ -1,0 +1,33 @@
+@import 'mixins.scss';
+
+$projectsImage: '../images/projects.png';
+
+.project {
+	position: relative;
+	font-family: 'pluto';
+	a {
+		text-decoration: none;
+	}
+	h5 {
+		font-size: 16px;
+		text-align: center;
+		text-decoration: normal;
+	}
+	.image {
+		position: relative;
+		margin: 0 auto;
+		width: 837px;
+		height: 442px;
+		background: url($projectsImage) 0 0 no-repeat;
+	}
+	.image:hover p { opacity: 0.9; }
+	p {
+		opacity: 0;
+		position: absolute;
+		padding: 20px 10px;
+		margin: 0;
+		bottom: 0;
+		background: #000;
+		@include transition(opacity, 0.5s, ease-in);
+	}
+}

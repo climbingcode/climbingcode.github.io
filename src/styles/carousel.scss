@@ -1,0 +1,37 @@
+.carousel {
+	position: fixed;
+    top: 10vh;
+	right: 5%;
+    width: 90vw;
+	height: 80vw;
+    z-index: 1000;
+    overflow: hidden;
+    > div {
+    	display: inline-block;
+    	vertical-align: top;
+    }
+    .arrow {
+		width: 7%;
+		height: 485px;
+        cursor: pointer;
+        &:before {
+            border-width: 1.25em 1.25em 0 0;
+            width: 3.45em;
+            height: 3.45em;
+            top: 14.15em;
+        }
+        &.chevron.left:before {
+            left: 22px;
+        }
+        &.chevron.right:before {
+            left: -14px;
+        }
+	}
+    .viewPort {
+		position: relative;
+    	padding: 0;
+    	margin: 0 auto;
+    	width: 85%;
+    	height: 100%;
+    }
+}

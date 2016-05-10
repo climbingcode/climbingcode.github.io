@@ -1,0 +1,88 @@
+$sprite: '../images/sprite.png';
+
+.space-invaders {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	.invaders-group {
+		position: relative;
+		width: 75vw;
+		min-width: 1000px;
+		z-index: -100;
+		.invader {
+			display: inline-block;
+			margin: 10px 15px;
+		}
+	}
+	.invader-gun {
+		&::after {
+			content: '';
+			display: block;
+			background: green;
+			opacity: 0.9;
+			width: 100px;
+			height: 30px;
+		}
+		&::before {
+			content: '';
+			display: block;
+			background: green;
+			opacity: 0.9;
+			width: 20px;
+			height: 30px;
+			margin: 0 auto;
+		}
+		position: fixed;
+		z-index: 1000;
+		bottom: 0;
+		left: 10;
+	}
+	.bullet {
+		position: fixed;
+		width: 5px;
+		height: 5px;
+		background: green;
+	}
+	.instructions {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 185px;
+		height: 20px;
+		z-index: 10000;
+		.arrows {
+			position: absolute;
+			float: right;
+			bottom: 5px;
+			right: 5px;
+			display: inline;
+			i:first-child {
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 2px;
+			}
+			i {
+			    display: inline-block;
+			    width: 30px;
+			    height: 15px;
+			    background: #EF6565;
+			    line-height: 18px;
+			    margin: 4px 3px -3px;
+			    text-align: center;
+			    font-family: 'pluto';
+			    font-size: 10px;
+			}
+		}
+		.mute {
+			width: 20px;
+			height: 40px;
+			margin: -5px 25px;
+			background: url($sprite) no-repeat -25px -441px;
+			&.muted {
+				background-position: 0 -441px;
+			}
+		}
+
+	}
+}

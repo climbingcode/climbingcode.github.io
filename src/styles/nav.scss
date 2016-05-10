@@ -1,0 +1,31 @@
+nav {
+	position: relative;
+	z-index: 1000;
+	height: 120px;
+	> div {
+		width: 300px;
+		margin: 0 5px;
+		display: inline-block;
+		vertical-align: top;
+		font-family: 'Skinny-Regular';
+	}
+	.links {
+		float: left;
+		a {
+			margin: 0 5px;
+			font-size: 30px;
+		}
+	}
+	.title {
+		float: right;
+		width: 250px;
+		h4 {
+			margin: 0;
+			font-size: 60px;
+		}
+		p {
+			margin: 5px 0;
+			font-size: 30px;
+		}
+	}
+}

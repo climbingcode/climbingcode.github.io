@@ -1,0 +1,39 @@
+@import 'mixins.scss';
+
+.contact {
+	position: relative;
+    margin: 0 auto;
+    width: 73%;
+	top: 20%;
+	input, textarea {
+    	display: block;
+    	width: 352px;
+    	padding: 15px 0;
+    	margin: 10px 0;
+    	background: transparent;
+    	color: white;
+    	border: none;
+    	text-align: center;
+    	font-size: 24px;
+        cursor: pointer;
+    }
+    textarea {
+        font-size: 12px;
+        height: 50px;
+    }
+    button {
+        font-size: 18px;
+        width: 100%;
+        padding: 10px 0;
+        background: transparent;
+        border: solid 1px #fff;
+        color: #fff;
+        cursor: pointer;
+        @include transition(all, 0.5s, ease-in);
+    }
+    button:hover {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+    }
+}
