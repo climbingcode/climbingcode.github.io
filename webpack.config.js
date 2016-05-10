@@ -7,8 +7,8 @@ module.exports = {
         "./src/app.jsx"
     ],
     output: {
-        path: path.resolve(__dirname, "build"),
-        publicPath: "/build/",
+        path: path.resolve(__dirname, "assets"),
+        publicPath: "/assets/",
         filename: "bundle.js"
     },
     module: defaultSettings.clientLoaders(),
