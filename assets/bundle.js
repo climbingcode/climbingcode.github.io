@@ -26756,6 +26756,7 @@
 					_this2.refs.name.value = '';
 					_this2.refs.email.value = '';
 					_this2.refs.content.value = '';
+					window.location.href = window.location.origin;
 				}, function (err) {
 					debugger;
 				});

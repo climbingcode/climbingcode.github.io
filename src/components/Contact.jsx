@@ -22,6 +22,7 @@ class Contact extends React.Component {
 			this.refs.name.value = '';
 			this.refs.email.value = '';
 			this.refs.content.value = '';
+			window.location.href = window.location.origin;
 		},
 		(err) => {
 			debugger;
