@@ -1,7 +1,14 @@
-.black-hole {	
+@import 'mixins.scss';
+
+.black-hole {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;	
     width: 500px;
     height: 500px;
     margin: 0 auto;
     background: #000;
     border-radius: 100%;
+    @include drop-shadow(-2px, 5px, 151px, white);
 } 

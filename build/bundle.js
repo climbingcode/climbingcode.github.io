@@ -79,41 +79,41 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Skills = __webpack_require__(239);
+	var _Skills = __webpack_require__(240);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
-	var _Projects = __webpack_require__(242);
+	var _Projects = __webpack_require__(244);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Blog = __webpack_require__(243);
+	var _Blog = __webpack_require__(245);
 
 	var _Blog2 = _interopRequireDefault(_Blog);
 
-	var _Contact = __webpack_require__(244);
+	var _Contact = __webpack_require__(246);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Carousel = __webpack_require__(245);
+	var _Carousel = __webpack_require__(249);
 
 	var _Carousel2 = _interopRequireDefault(_Carousel);
 
-	var _BlackHole = __webpack_require__(250);
+	var _BlackHole = __webpack_require__(254);
 
 	var _BlackHole2 = _interopRequireDefault(_BlackHole);
 
-	var _Stars = __webpack_require__(253);
+	var _Stars = __webpack_require__(257);
 
 	var _Stars2 = _interopRequireDefault(_Stars);
 
-	var _SpaceInvaders = __webpack_require__(254);
+	var _SpaceInvaders = __webpack_require__(258);
 
 	var _SpaceInvaders2 = _interopRequireDefault(_SpaceInvaders);
 
-	__webpack_require__(257);
+	__webpack_require__(262);
 
-	__webpack_require__(260);
+	__webpack_require__(265);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25744,7 +25744,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  height: 200px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 40px; }\n  nav .title {\n    float: right;\n    width: 372px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 100px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 60px; }\n", ""]);
+	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px; }\n", ""]);
 
 	// exports
 
@@ -26245,6 +26245,7 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'about' },
+					_react2.default.createElement('div', { className: 'me' }),
 					_react2.default.createElement(
 						'p',
 						null,
@@ -26265,134 +26266,108 @@
 
 	module.exports = {
 		"about": {
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+			"description": "I’m a developer who lives and breaths code. I’ve been fortunate enough to work on a large range of projects. Including writing MVT / AB tests in Javascript / AngularJS for household known e-commerce sites, a web-app for the largest Learn to Code event in Canada and helping students at a local coding bootcamp as a Teaching Assistant. As mentioned, my latest position has me coding AB / MVT on sites in Javascript / CSS for a range of e-commerce / digital services. Where I work closely with designers and coordinators to run experiments on sites. These tests range rapidly in complexity and therefore require the ability to reverse engineer problems and having a solid understanding of the DOM, Javascript and CSS."
 		},
 		"projects": [
 			{
-				"title": "this is the title one",
-				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"link": "http://www.google.com"
+				"title": "Cloverdale Business Improvement Agency",
+				"description": "Project built with Jekyll, Google maps API, jQuery and Sass/Bootstrap ",
+				"link": "http://www.cloverdalebia.com/",
+				"backgroundPosition": "0px -535px"
 			},
 			{
-				"title": "this is the title two",
-				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-				"imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebP4ATtRb9xZDuCeGICgLSySApFDolZDUlgLKX4cW9NrLvj_b",
-				"link": "http://www.google.com"
-			},
-			{
-				"title": "this is the title three",
-				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"link": "http://www.google.com"
-			},
-			{
-				"title": "this is the title four",
-				"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-				"imgSrc": "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
-				"link": "http://www.google.com"
+				"title": "Brand Asset Manager App",
+				"description": "Built with Rails and jQuery",
+				"backgroundPosition": "0px 0px"
 			}
 		],
 		"skills": [
 			{
 				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"backgroundPosition": "-29px -16px",
+				"score": 100,
+				"width": 128,
+				"height": 172
 			},
 			{
 				"title": "css",
-				"backgroundPosition": "-230px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"backgroundPosition": "-189px -16px",
+				"score": 100,
+				"width": 127,
+				"height": 174
 			},
 			{
 				"title": "js",
-				"backgroundPosition": "-425px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"backgroundPosition": "-336px -17px",
+				"score": 100,
+				"width": 127,
+				"height": 174
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "react",
+				"backgroundPosition": "-37px -200px",
+				"height": 123,
+				"width": 127,
+				"score": 60
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "angular",
+				"backgroundPosition": "-190px -200px",
+				"score": 70,
+				"width": 123,
+				"height": 129
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "rails",
+				"backgroundPosition": "-187px -338px",
+				"score": 70,
+				"width": 130,
+				"height": 161
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "swift",
+				"backgroundPosition": "-482px -340px",
+				"score": 50,
+				"width": 124,
+				"height": 127
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "php",
+				"backgroundPosition": "-13px -340px",
+				"score": 50,
+				"width": 173,
+				"height": 87
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "git",
+				"backgroundPosition": "-493px -100px",
+				"score": 70,
+				"width": 169,
+				"height": 73
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "node",
+				"backgroundPosition": "-546px -11px",
+				"score": 70,
+				"width": 195,
+				"height": 67
 			},
 			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
-			},
-			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
-			},
-			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
-			},
-			{
-				"title": "html",
-				"backgroundPosition": "-37px -20px",
-				"score": 60,
-				"width": 167,
-				"height": 216
+				"title": "photoshop",
+				"backgroundPosition": "-339px -200px",
+				"score": 50,
+				"width": 123,
+				"height": 129
 			}
-		]
+		],
+		"INVADERS": {
+			"ARROWS": {
+				"LEFT": 37,
+				"UP": 38,
+				"RIGHT": 39,
+				"SPACE": 32
+			}
+		}
 	};
 
 /***/ },
@@ -26430,13 +26405,19 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".about {\n  margin: 0px 100px; }\n  .about .me {\n    width: 236px;\n    height: 236px;\n    margin: 0 30px;\n    float: left;\n    font-weight: 12px;\n    background: url(" + __webpack_require__(239) + ") 0 0 no-repeat; }\n  .about p {\n    font-family: 'pluto'; }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e0ee4ee76ef30c3582d4cec8db3b1d9d.jpeg";
+
+/***/ },
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26451,7 +26432,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(240);
+	__webpack_require__(241);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26476,13 +26457,21 @@
 
 				var skill = this.props.skill;
 
-				var divStyle = {
+				var skillStyle = {
 					backgroundPosition: skill.backgroundPosition,
 					height: skill.height,
 					width: skill.width
 				};
 
-				return _react2.default.createElement('div', { className: 'skills', style: divStyle });
+				return _react2.default.createElement(
+					'div',
+					{ className: 'skills', style: skillStyle },
+					_react2.default.createElement(
+						'div',
+						{ className: 'skill-meter' },
+						_react2.default.createElement('div', { 'data-score': skill.score })
+					)
+				);
 			}
 		}]);
 
@@ -26492,13 +26481,13 @@
 	exports.default = Skills;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(241);
+	var content = __webpack_require__(242);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26518,7 +26507,7 @@
 	}
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26526,13 +26515,19 @@
 
 
 	// module
-	exports.push([module.id, ".skills {\n  background: url(/assets/f75ef4571512834ede9dbcd7eb4ecd30.png) no-repeat;\n  width: 100%;\n  height: 100%; }\n", ""]);
+	exports.push([module.id, ".invader .skills {\n  position: relative;\n  background: url(" + __webpack_require__(243) + ") no-repeat;\n  width: 100%;\n  height: 100%; }\n  .invader .skills .skill-meter {\n    position: absolute;\n    opacity: 0;\n    bottom: -20px;\n    height: 15px;\n    width: 100%;\n    background: #fff;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n    .invader .skills .skill-meter div {\n      width: 0;\n      height: 100%;\n      background: green;\n      transition: width 1s ease-in;\n      -webkit-transition: width 1s ease-in; }\n\n.invader.hit .skill-meter {\n  display: block;\n  opacity: 0.7; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 242 */
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "91ca24ea2775378b96501d4494444df2.png";
+
+/***/ },
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26550,6 +26545,8 @@
 	var _content = __webpack_require__(236);
 
 	var _content2 = _interopRequireDefault(_content);
+
+	__webpack_require__(270);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26579,9 +26576,13 @@
 
 				var project = this.state.projects[this.props.currentIndex];
 
+				var style = {
+					backgroundPosition: project.backgroundPosition
+				};
+
 				return _react2.default.createElement(
 					'div',
-					null,
+					{ className: 'project' },
 					_react2.default.createElement(
 						'a',
 						{ href: project.link },
@@ -26590,11 +26591,14 @@
 							null,
 							project.title
 						),
-						_react2.default.createElement('img', { src: project.imgSrc }),
 						_react2.default.createElement(
-							'p',
-							null,
-							project.description
+							'div',
+							{ style: style, className: 'image' },
+							_react2.default.createElement(
+								'p',
+								null,
+								project.description
+							)
 						)
 					)
 				);
@@ -26607,7 +26611,7 @@
 	exports.default = Projects;
 
 /***/ },
-/* 243 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26622,7 +26626,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(240);
+	__webpack_require__(241);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26647,7 +26651,7 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'blog' },
-					'These are my Blog'
+					'Coming soon!!!'
 				);
 			}
 		}]);
@@ -26658,7 +26662,7 @@
 	exports.default = Blog;
 
 /***/ },
-/* 244 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26673,7 +26677,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(240);
+	__webpack_require__(247);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26693,12 +26697,50 @@
 		}
 
 		_createClass(Contact, [{
+			key: 'submitEmail',
+			value: function submitEmail(event) {
+				var _this2 = this;
+
+				event.preventDefault();
+				emailjs.send("default_service", "contact_form", {
+					name: this.refs.name.value,
+					email: this.refs.email.value,
+					content: this.refs.content.value
+				}).then(function (res) {
+					_this2.refs.name.value = '';
+					_this2.refs.email.value = '';
+					_this2.refs.content.value = '';
+				}, function (err) {
+					debugger;
+				});
+			}
+		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'contact' },
-					'These are my Contact'
+					{ className: 'contact', id: 'contactForm' },
+					_react2.default.createElement(
+						'form',
+						{ onSubmit: this.submitEmail.bind(this), ref: 'form' },
+						_react2.default.createElement('input', { type: 'text',
+							name: 'name',
+							ref: 'name',
+							placeholder: 'Your Name' }),
+						_react2.default.createElement('input', { type: 'text',
+							name: 'email',
+							ref: 'email',
+							placeholder: 'Your Email' }),
+						_react2.default.createElement('textarea', { type: 'text',
+							name: 'content',
+							ref: 'content',
+							placeholder: 'content' }),
+						_react2.default.createElement(
+							'button',
+							{ type: 'submit' },
+							'Submit Email'
+						)
+					)
 				);
 			}
 		}]);
@@ -26709,7 +26751,47 @@
 	exports.default = Contact;
 
 /***/ },
-/* 245 */
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(248);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./contact.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./contact.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 73%;\n  top: 20%; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 352px;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26724,7 +26806,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Projects = __webpack_require__(242);
+	var _Projects = __webpack_require__(244);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
@@ -26732,9 +26814,9 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(246);
+	__webpack_require__(250);
 
-	__webpack_require__(248);
+	__webpack_require__(252);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26799,13 +26881,13 @@
 	exports.default = Carousel;
 
 /***/ },
-/* 246 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(247);
+	var content = __webpack_require__(251);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26825,7 +26907,7 @@
 	}
 
 /***/ },
-/* 247 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26839,13 +26921,13 @@
 
 
 /***/ },
-/* 248 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(249);
+	var content = __webpack_require__(253);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26865,7 +26947,7 @@
 	}
 
 /***/ },
-/* 249 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26873,13 +26955,13 @@
 
 
 	// module
-	exports.push([module.id, ".carousel {\n  position: fixed;\n  top: 20%;\n  right: 5%;\n  width: 90vw;\n  height: 30vw;\n  overflow: hidden; }\n  .carousel > div {\n    display: inline-block;\n    vertical-align: top; }\n  .carousel .arrow {\n    width: 5%;\n    height: 485px;\n    cursor: pointer; }\n    .carousel .arrow:before {\n      border-width: 1.25em 1.25em 0 0;\n      width: 3.45em;\n      height: 3.45em;\n      top: 14.15em; }\n    .carousel .arrow.chevron.left:before {\n      left: 16px; }\n    .carousel .arrow.chevron.right:before {\n      left: -7px; }\n  .carousel .viewPort {\n    position: relative;\n    padding: 0;\n    margin: 0 auto;\n    width: 90%;\n    height: 100%; }\n    .carousel .viewPort img {\n      max-width: 833px;\n      max-height: 833px; }\n", ""]);
+	exports.push([module.id, ".carousel {\n  position: fixed;\n  top: 10vh;\n  right: 5%;\n  width: 90vw;\n  height: 80vw;\n  z-index: 1000;\n  overflow: hidden; }\n  .carousel > div {\n    display: inline-block;\n    vertical-align: top; }\n  .carousel .arrow {\n    width: 7%;\n    height: 485px;\n    cursor: pointer; }\n    .carousel .arrow:before {\n      border-width: 1.25em 1.25em 0 0;\n      width: 3.45em;\n      height: 3.45em;\n      top: 14.15em; }\n    .carousel .arrow.chevron.left:before {\n      left: 22px; }\n    .carousel .arrow.chevron.right:before {\n      left: -14px; }\n  .carousel .viewPort {\n    position: relative;\n    padding: 0;\n    margin: 0 auto;\n    width: 85%;\n    height: 100%; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 250 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26894,7 +26976,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(251);
+	__webpack_require__(255);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26930,13 +27012,13 @@
 	exports.default = BlackHole;
 
 /***/ },
-/* 251 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(252);
+	var content = __webpack_require__(256);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26956,7 +27038,7 @@
 	}
 
 /***/ },
-/* 252 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26964,16 +27046,16 @@
 
 
 	// module
-	exports.push([module.id, ".black-hole {\n  width: 500px;\n  height: 500px;\n  margin: 0 auto;\n  background: #000;\n  border-radius: 100%; }\n", ""]);
+	exports.push([module.id, ".black-hole {\n  position: absolute;\n  top: 50px;\n  left: 0;\n  right: 0;\n  width: 500px;\n  height: 500px;\n  margin: 0 auto;\n  background: #000;\n  border-radius: 100%;\n  filter: drop-shadow(-2px 5px 151px white);\n  -webkit-filter: drop-shadow(-2px 5px 151px white); }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 253 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -27008,7 +27090,7 @@
 		}
 
 		_createClass(Stars, [{
-			key: "_getStars",
+			key: '_getStars',
 			value: function _getStars() {
 				var i = 0;
 				var stars = [];
@@ -27016,18 +27098,56 @@
 					var starX = Math.random() * window.innerWidth;
 					var starY = Math.random() * window.innerHeight;
 					var starStyle = { top: starY, left: starX };
-					var star = _react2.default.createElement("i", { className: "star", key: i, style: starStyle });
+					var star = _react2.default.createElement('i', { className: 'star', key: i, style: starStyle });
 					stars.push(star);
 					i++;
 				}
 				return stars;
 			}
 		}, {
-			key: "render",
+			key: '_isOutOfBounds',
+			value: function _isOutOfBounds(shootingStar) {
+				return shootingStar.offsetLeft > document.body.clientWidth;
+			}
+		}, {
+			key: '_shootingStar',
+			value: function _shootingStar() {
+				var _this2 = this;
+
+				this.shootingStars = setInterval(function () {
+					var shootingStar = document.createElement('div');
+					var starY = Math.random() * window.innerHeight;
+					var starX = 0;
+					shootingStar.className = 'star shooting-star';
+					shootingStar.style.left = starX;
+					shootingStar.style.top = starY + 'px';
+					_this2.refs.stars.appendChild(shootingStar);
+					var moveShootingStar = setInterval(function () {
+						shootingStar.style.left = (starX += 5) + 'px';
+						shootingStar.style.top = (starY += 1) + 'px';
+						if (_this2._isOutOfBounds(shootingStar)) {
+							clearInterval(moveShootingStar);
+							shootingStar.parentNode.removeChild(shootingStar);
+						}
+					}, 10);
+				}, 3000);
+			}
+		}, {
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				this._shootingStar();
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				clearInterval(this.shootingStars);
+			}
+		}, {
+			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
-					"div",
-					{ className: "stars" },
+					'div',
+					{ className: 'stars', ref: 'stars' },
 					this._getStars.call(this)
 				);
 			}
@@ -27039,7 +27159,7 @@
 	exports.default = Stars;
 
 /***/ },
-/* 254 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27054,7 +27174,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Skills = __webpack_require__(239);
+	var _Skills = __webpack_require__(240);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
@@ -27062,7 +27182,11 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(255);
+	__webpack_require__(259);
+
+	var _lazer = __webpack_require__(261);
+
+	var _lazer2 = _interopRequireDefault(_lazer);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27071,6 +27195,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var lazerSound = new Audio(_lazer2.default);
 
 	var SpaceInvaders = function (_React$Component) {
 		_inherits(SpaceInvaders, _React$Component);
@@ -27081,12 +27207,7 @@
 			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SpaceInvaders).call(this, props));
 
 			_this.state = {
-				arrowKeys: {
-					left: 37,
-					up: 38,
-					right: 39,
-					space: 32
-				}
+				mute: false
 			};
 			return _this;
 		}
@@ -27105,13 +27226,13 @@
 			value: function moveInvaders() {
 				var invaders = this.refs.invaders;
 				var moveXBy = 5;
-				var moveYBy = 50;
+				var moveYBy = 25;
 				var left = 0;
-				var top = 0;
+				var top = 100;
 				this.direction = 'left';
 				this.movingInvaders = setInterval(function () {
 					if (this.hitBorder(this.direction, invaders, 10)) {
-						invaders.style.top = (top += moveYBy) + 'px';
+						// invaders.style.top = (top+= moveYBy) + 'px';
 						this.direction = this.direction === 'left' ? 'right' : 'left';
 					} else {
 						if (this.direction === 'left') {
@@ -27123,6 +27244,22 @@
 				}.bind(this), 100);
 			}
 		}, {
+			key: 'hasCollided',
+			value: function hasCollided(invader, bullet) {
+
+				var bulletsTop = bullet.offsetTop,
+				    bulletsLeft = bullet.offsetLeft,
+				    invaderParent = invader.parentNode,
+				    invaderParentLeft = invaderParent.offsetLeft,
+				    invaderParentTop = invaderParent.offsetTop,
+				    invaderTop = invaderParentTop + invader.offsetTop,
+				    invaderBottom = invaderTop + invader.clientHeight,
+				    invaderBottomLeft = invaderParentLeft + invader.offsetLeft,
+				    invaderBottomRight = invaderBottomLeft + invader.clientWidth;
+
+				return bulletsLeft > invaderBottomLeft && bulletsLeft < invaderBottomRight && bulletsTop < invaderBottom && invader.className.indexOf('hit') === -1;
+			}
+		}, {
 			key: 'collison',
 			value: function collison(bullet) {
 
@@ -27131,19 +27268,11 @@
 				this.invaders.forEach(function (invader, index) {
 
 					var invader = this.refs[invader];
-					var bulletsTop = bullet.offsetTop;
-					var bulletsLeft = bullet.offsetLeft;
 
-					var invaderParent = invader.parentNode;
-					var invaderParentLeft = invaderParent.offsetLeft;
-					var invaderParentTop = invaderParent.offsetTop;
-					var invaderTop = invaderParentTop + invader.offsetTop;
-					var invaderBottom = invaderTop + invader.offsetHeight;
-					var invaderBottomLeft = invaderParentLeft + invader.offsetLeft;
-					var invaderBottomRight = invaderBottomLeft + invader.clientWidth;
-
-					if (bulletsLeft > invaderBottomLeft && bulletsLeft < invaderBottomRight && bulletsTop < invaderBottom && bulletsTop > invaderTop && invader.className.indexOf('hit') === -1) {
-						console.log(invaderBottom, bulletsTop);
+					if (this.hasCollided(invader, bullet)) {
+						var skillMeter = invader.getElementsByTagName('div')[2];
+						var skillScore = skillMeter.dataset.score;
+						skillMeter.style.width = skillScore + '%';
 						invader.className = 'invader hit';
 						collided = true;
 					}
@@ -27160,6 +27289,7 @@
 				bullet.style.left = left + this.refs.gun.clientWidth / 2 + 'px';
 				bullet.style.bottom = this.refs.gun.clientHeight + 'px';
 				this.refs.container.appendChild(bullet);
+				if (!this.state.mute) lazerSound.play();
 				var moveBullet = setInterval(function () {
 					bullet.style.bottom = (bottom += 10) + 'px';
 					if (Math.abs(bottom) > window.innerHeight || this.collison.call(this, bullet)) {
@@ -27175,7 +27305,9 @@
 				var top = 0;
 				var left = window.innerWidth / 2;
 				var gun = this.refs.gun;
-				var arrows = this.state.arrowKeys;
+				var moveBy = 20;
+
+				var ARROWS = _content2.default.INVADERS.ARROWS;
 
 				gun.style.left = window.innerWidth / 2 + 'px';
 
@@ -27183,21 +27315,31 @@
 
 					var e = e || window.event;
 
-					if (e.keyCode == arrows.up || e.keyCode == arrows.space) {
+					if (e.keyCode == ARROWS.UP || e.keyCode == ARROWS.SPACE) {
 						this.shotGun.call(this, left);
-					} else if (e.keyCode == arrows.right) {
+					} else if (e.keyCode == ARROWS.RIGHT) {
 						if (this.hitBorder('left', gun, 70)) return;
-						gun.style.left = (left += 10) + 'px';
-					} else if (e.keyCode == arrows.left) {
+						gun.style.left = (left += moveBy) + 'px';
+					} else if (e.keyCode == ARROWS.LEFT) {
 						if (this.hitBorder('right', gun, 70)) return;
-						gun.style.left = (left -= 10) + 'px';
+						gun.style.left = (left -= moveBy) + 'px';
 					}
 				}.bind(this);
 			}
 		}, {
+			key: 'mute',
+			value: function mute() {
+				var element = this.refs.mute;
+				var mute = this.state.mute ? mute = false : mute = true;
+				this.state.mute ? element.className = 'mute' : element.className = 'mute muted';
+				this.setState({
+					mute: mute
+				});
+			}
+		}, {
 			key: 'componentDidMount',
 			value: function componentDidMount() {
-				// this.moveInvaders.call(this);
+				this.moveInvaders.call(this);
 				this.initGun.call(this);
 			}
 		}, {
@@ -27223,15 +27365,44 @@
 					);
 				});
 
+				var styles = {
+					top: 100
+				};
+
 				return _react2.default.createElement(
 					'div',
 					{ className: 'space-invaders', ref: 'container' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'invaders-group', ref: 'invaders' },
+						{ style: styles, className: 'invaders-group', ref: 'invaders' },
 						skills
 					),
-					_react2.default.createElement('div', { className: 'invader-gun', ref: 'gun' })
+					_react2.default.createElement('div', { className: 'invader-gun', ref: 'gun' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'instructions' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'arrows' },
+							_react2.default.createElement(
+								'i',
+								null,
+								'S'
+							),
+							_react2.default.createElement(
+								'i',
+								null,
+								'L'
+							),
+							_react2.default.createElement('i', null),
+							_react2.default.createElement(
+								'i',
+								null,
+								'R'
+							)
+						),
+						_react2.default.createElement('div', { className: 'mute', ref: 'mute', onClick: this.mute.bind(this) })
+					)
 				);
 			}
 		}]);
@@ -27242,13 +27413,13 @@
 	exports.default = SpaceInvaders;
 
 /***/ },
-/* 255 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(256);
+	var content = __webpack_require__(260);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27268,7 +27439,7 @@
 	}
 
 /***/ },
-/* 256 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27276,19 +27447,25 @@
 
 
 	// module
-	exports.push([module.id, ".space-invaders {\n  position: absolute; }\n  .space-invaders .invaders-group {\n    position: absolute;\n    width: 1500px;\n    z-index: -100; }\n    .space-invaders .invaders-group .invader {\n      display: inline-block;\n      margin: 20px; }\n      .space-invaders .invaders-group .invader.hit {\n        background: red; }\n  .space-invaders .invader-gun {\n    width: 100px;\n    height: 100px;\n    background: #fff;\n    position: fixed;\n    z-index: 1000;\n    bottom: 0;\n    left: 10; }\n  .space-invaders .bullet {\n    position: fixed;\n    width: 5px;\n    height: 5px;\n    background: #fff; }\n", ""]);
+	exports.push([module.id, ".space-invaders {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100%; }\n  .space-invaders .invaders-group {\n    position: relative;\n    width: 75vw;\n    min-width: 1000px;\n    z-index: -100; }\n    .space-invaders .invaders-group .invader {\n      display: inline-block;\n      margin: 10px 15px; }\n  .space-invaders .invader-gun {\n    position: fixed;\n    z-index: 1000;\n    bottom: 0;\n    left: 10; }\n    .space-invaders .invader-gun::after {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 100px;\n      height: 30px; }\n    .space-invaders .invader-gun::before {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 20px;\n      height: 30px;\n      margin: 0 auto; }\n  .space-invaders .bullet {\n    position: fixed;\n    width: 5px;\n    height: 5px;\n    background: green; }\n  .space-invaders .instructions {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    width: 185px;\n    height: 20px;\n    z-index: 10000; }\n    .space-invaders .instructions .arrows {\n      position: absolute;\n      float: right;\n      bottom: 5px;\n      right: 5px;\n      display: inline; }\n      .space-invaders .instructions .arrows i:first-child {\n        display: block;\n        margin: 0 auto;\n        margin-bottom: 2px; }\n      .space-invaders .instructions .arrows i {\n        display: inline-block;\n        width: 30px;\n        height: 15px;\n        background: #EF6565;\n        line-height: 18px;\n        margin: 4px 3px -3px;\n        text-align: center;\n        font-family: 'pluto';\n        font-size: 10px; }\n    .space-invaders .instructions .mute {\n      width: 20px;\n      height: 40px;\n      margin: -5px 25px;\n      background: url(" + __webpack_require__(243) + ") no-repeat -25px -441px; }\n      .space-invaders .instructions .mute.muted {\n        background-position: 0 -441px; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 257 */
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c6e1dc4f9bb8f71c5c73fb46eb8d4a8c.wav";
+
+/***/ },
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(258);
+	var content = __webpack_require__(263);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27308,7 +27485,7 @@
 	}
 
 /***/ },
-/* 258 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27316,25 +27493,25 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(259) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(264) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Pluto';\n  src: url(" + __webpack_require__(275) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 259 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "public/fonts/Skinny-Regular.ttf";
 
 /***/ },
-/* 260 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(261);
+	var content = __webpack_require__(266);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27354,7 +27531,7 @@
 	}
 
 /***/ },
-/* 261 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27362,17 +27539,72 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  width: 100%;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    height: 100vh;\n    width: 95vw;\n    position: relative;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .star {\n      position: absolute;\n      width: 2px;\n      height: 2px;\n      background: #fff;\n      z-index: -1000;\n      -webkit-box-shadow: -1px -48px 49px #fff;\n      -moz-box-shadow: -1px -48px 49px #fff;\n      box-shadow: -1px -48px 49px #fff; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -268px;\n      height: 30vw;\n      width: 100%;\n      background: url(" + __webpack_require__(263) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 10vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 290px;\n        height: 1500px;\n        background: #000; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
+	exports.push([module.id, "body {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .star {\n      position: absolute;\n      width: 2px;\n      height: 2px;\n      background: #fff;\n      z-index: -1000;\n      -webkit-box-shadow: -1px -48px 49px #fff;\n      -moz-box-shadow: -1px -48px 49px #fff;\n      box-shadow: -1px -48px 49px #fff; }\n    body section .shooting-star {\n      z-index: 0; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(267) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 262 */,
-/* 263 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
+
+/***/ },
+/* 268 */,
+/* 269 */,
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(271);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./project.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./project.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".project {\n  position: relative;\n  font-family: 'pluto'; }\n  .project a {\n    text-decoration: none; }\n  .project h5 {\n    font-size: 16px;\n    text-align: center;\n    text-decoration: normal; }\n  .project .image {\n    position: relative;\n    margin: 0 auto;\n    width: 837px;\n    height: 442px;\n    background: url(" + __webpack_require__(272) + ") 0 0 no-repeat; }\n  .project .image:hover p {\n    opacity: 0.9; }\n  .project p {\n    opacity: 0;\n    position: absolute;\n    padding: 20px 10px;\n    margin: 0;\n    bottom: 0;\n    background: #000;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a97c5b18509cfd881d5a96d6b8d20e99.png";
+
+/***/ },
+/* 273 */,
+/* 274 */,
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/pluto.ttf";
 
 /***/ }
 /******/ ]);

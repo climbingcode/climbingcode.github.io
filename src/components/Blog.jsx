@@ -11,7 +11,7 @@ class Blog extends React.Component {
 	render() {
 		return (
 			<div className="blog">
-				These are my Blog
+				Coming soon!!!
 			</div>
 		)
 	}

@@ -23,9 +23,41 @@ class Stars extends React.Component {
 		return stars;
 	}
 
+	_isOutOfBounds(shootingStar) {
+		return shootingStar.offsetLeft > document.body.clientWidth;
+	}
+
+	_shootingStar() {
+		this.shootingStars = setInterval(() => {
+			let shootingStar = document.createElement('div');
+			let starY = Math.random()*window.innerHeight;
+			let starX = 0;
+			shootingStar.className  = 'star shooting-star';
+			shootingStar.style.left = starX;
+			shootingStar.style.top  = starY + 'px';
+			this.refs.stars.appendChild(shootingStar);
+			var moveShootingStar = setInterval(() => {
+				shootingStar.style.left = (starX+=5) + 'px';
+				shootingStar.style.top  = (starY+=1) + 'px';
+				if (this._isOutOfBounds(shootingStar)) {
+					clearInterval(moveShootingStar);
+					shootingStar.parentNode.removeChild(shootingStar);
+				}
+			}, 10);
+		}, 3000);
+	}
+
+	componentDidMount() {
+		this._shootingStar();
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.shootingStars);
+	}
+
 	render() {
 		return (
-			<div className="stars">
+			<div className="stars" ref="stars">
 				{this._getStars.call(this)}
 			</div>
 		)

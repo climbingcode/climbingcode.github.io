@@ -12,14 +12,17 @@ class Skills extends React.Component {
 
 		var skill = this.props.skill;
 
-		var divStyle = {
+		var skillStyle = {
 			backgroundPosition: skill.backgroundPosition,
 			height: skill.height,
 			width: skill.width
 		};
 
 		return (
-			<div className="skills" style={divStyle}>
+			<div className="skills" style={skillStyle}>
+				<div className="skill-meter">
+					<div data-score={skill.score}></div>
+				</div>
 			</div>
 		)
 	}

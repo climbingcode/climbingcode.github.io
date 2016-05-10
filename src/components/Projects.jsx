@@ -2,6 +2,8 @@ import React from 'react';
 
 import content from 'config/content.json';
 
+import 'styles/project.scss';
+
 class Projects extends React.Component {
 
 	constructor(props) {
@@ -15,12 +17,17 @@ class Projects extends React.Component {
 
 		var project = this.state.projects[this.props.currentIndex];
 
+		var style = {
+			backgroundPosition: project.backgroundPosition
+		};
+
 		return (
-			<div>
+			<div className="project">
 				<a href={project.link}>
 					<h5>{project.title}</h5>
-					<img src={project.imgSrc}/>
-					<p>{project.description}</p>
+					<div style={style} className="image">
+						<p>{project.description}</p>
+					</div>
 				</a>
 			</div>
 		)

@@ -30,6 +30,10 @@ function loaders() {
       {
         test: /\.json$/,
         loader: "json"
+      },
+      {
+        test: /\.wav$/,
+        loader: "file-loader"
       }
     ]
   };

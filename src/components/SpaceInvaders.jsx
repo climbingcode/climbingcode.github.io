@@ -1,19 +1,18 @@
 import React from 'react';
 import Skills from 'components/Skills.jsx';
-import content from 'config/content.json';
+import SETTINGS from 'config/content.json';
 import 'styles/space_invaders.scss';
+
+import lazerSoundFile from 'sounds/lazer.wav';
+
+var lazerSound = new Audio(lazerSoundFile);
 
 class SpaceInvaders extends React.Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			arrowKeys: {
-				left: 37,
-				up: 38,
-				right: 39,
-				space: 32
-			}
+			mute: false
 		}
 	}
 
@@ -28,13 +27,13 @@ class SpaceInvaders extends React.Component {
 	moveInvaders() {
 		var invaders = this.refs.invaders;
 		var moveXBy = 5;
-		var moveYBy = 50;
+		var moveYBy = 25;
 		var left = 0;
-		var top = 0;
+		var top = 100;
 		this.direction = 'left';
 		this.movingInvaders = setInterval(function() {
 			if (this.hitBorder(this.direction, invaders, 10)) {
-				invaders.style.top = (top+= moveYBy) + 'px';
+				// invaders.style.top = (top+= moveYBy) + 'px';
 				this.direction = this.direction === 'left' ? 'right' : 'left';
 			} else {
 				if (this.direction === 'left') {
@@ -46,30 +45,38 @@ class SpaceInvaders extends React.Component {
 		}.bind(this), 100);
 	}
 
+	hasCollided(invader, bullet) {
+
+		var bulletsTop 	   	= bullet.offsetTop,
+		bulletsLeft			= bullet.offsetLeft,
+
+		invaderParent		= invader.parentNode,
+		invaderParentLeft   = invaderParent.offsetLeft,
+		invaderParentTop	= invaderParent.offsetTop,
+		invaderTop			= invaderParentTop + invader.offsetTop,
+		invaderBottom 		= invaderTop + invader.clientHeight,
+		invaderBottomLeft   = invaderParentLeft + invader.offsetLeft,
+		invaderBottomRight  = invaderBottomLeft + invader.clientWidth;
+
+		return 	(bulletsLeft > invaderBottomLeft) 
+				&& (bulletsLeft < invaderBottomRight)
+				&& (bulletsTop < invaderBottom) 
+				&& (invader.className.indexOf('hit') === -1)
+
+	}
+
 	collison(bullet) {
 		
 		var collided = false;
 
 		this.invaders.forEach(function(invader, index) {
 			
-			var invader   	   		= this.refs[invader];	
-			var bulletsTop 	   		= bullet.offsetTop;
-			var bulletsLeft			= bullet.offsetLeft;
-
-			var invaderParent		= invader.parentNode;
-			var invaderParentLeft   = invaderParent.offsetLeft;
-			var invaderParentTop	= invaderParent.offsetTop;
-			var invaderTop			= invaderParentTop + invader.offsetTop
-			var invaderBottom 		= invaderTop + (invader.offsetHeight);
-			var invaderBottomLeft   = invaderParentLeft + invader.offsetLeft;
-			var invaderBottomRight  = invaderBottomLeft + invader.clientWidth;
-
-			if ((bulletsLeft > invaderBottomLeft) 
-				&& (bulletsLeft < invaderBottomRight)
-				&& (bulletsTop < invaderBottom) 
-				&& (bulletsTop > invaderTop)
-				&& (invader.className.indexOf('hit') === -1)) {
-				console.log(invaderBottom, bulletsTop);
+			var invader = this.refs[invader];	
+			
+			if (this.hasCollided(invader, bullet)) {
+				let skillMeter = invader.getElementsByTagName('div')[2];
+				let skillScore = skillMeter.dataset.score;
+				skillMeter.style.width = (skillScore + '%');
 				invader.className = 'invader hit';
 				collided = true;
 			}
@@ -87,9 +94,11 @@ class SpaceInvaders extends React.Component {
 		bullet.style.left 	= left + (this.refs.gun.clientWidth/2) + 'px';
 		bullet.style.bottom = this.refs.gun.clientHeight + 'px';
 		this.refs.container.appendChild(bullet);
+		if (!this.state.mute) lazerSound.play();
 		var moveBullet = setInterval(function() {
 			bullet.style.bottom = (bottom+=10) + 'px';
-			if (Math.abs(bottom) > window.innerHeight || this.collison.call(this, bullet)) {
+			if (Math.abs(bottom) > window.innerHeight 
+				|| this.collison.call(this, bullet)) {
 				clearInterval(moveBullet);
 				bullet.parentNode.removeChild(bullet);
 			}
@@ -101,7 +110,9 @@ class SpaceInvaders extends React.Component {
 		var top  	= 0;
 		var left 	= window.innerWidth/2;
 		var gun 	= this.refs.gun;
-		var arrows  = this.state.arrowKeys;
+		var moveBy	= 20;
+
+		var ARROWS = SETTINGS.INVADERS.ARROWS;
 
 		gun.style.left = window.innerWidth/2 + 'px';
 
@@ -109,24 +120,33 @@ class SpaceInvaders extends React.Component {
 
 			var e = e || window.event;
 
-			if (e.keyCode == arrows.up || e.keyCode == arrows.space) {
+			if (e.keyCode == ARROWS.UP || e.keyCode == ARROWS.SPACE) {
     			this.shotGun.call(this, left);
     		}
-		    else if (e.keyCode == arrows.right) {
+		    else if (e.keyCode == ARROWS.RIGHT) {
 		    	if (this.hitBorder('left', gun, 70)) return;
-		        gun.style.left = (left+=10) + 'px';
+		        gun.style.left = (left+=moveBy) + 'px';
 		    }
-		    else if (e.keyCode == arrows.left) {
+		    else if (e.keyCode == ARROWS.LEFT) {
 		    	if (this.hitBorder('right', gun, 70)) return;
-		    	gun.style.left = (left-=10) + 'px';
+		    	gun.style.left = (left-=moveBy) + 'px';
 		    }
 
 		}.bind(this);
 
 	}
 
+	mute() {
+		var element = this.refs.mute;
+		var mute 	= this.state.mute ? mute = false : mute = true;
+		this.state.mute ? element.className = 'mute' : element.className = 'mute muted';
+		this.setState({
+			mute: mute
+		});
+	}
+
 	componentDidMount() {
-		// this.moveInvaders.call(this);
+		this.moveInvaders.call(this);
 		this.initGun.call(this);
 	}
 
@@ -139,7 +159,7 @@ class SpaceInvaders extends React.Component {
 
 		this.invaders = [];
 
-		var skills = content.skills.map((skill, index) => {
+		var skills = SETTINGS.skills.map((skill, index) => {
 			var invader = 'invader-' + index;
 			this.invaders.push(invader);
 			return  (<div className="invader" key={index} ref={invader}>
@@ -147,12 +167,20 @@ class SpaceInvaders extends React.Component {
 					</div>);
 		});
 
+		var styles = {
+			top: 100
+		};
+
 		return (
 			<div className="space-invaders" ref="container">
-				<div className="invaders-group" ref="invaders">
+				<div style={styles} className="invaders-group" ref="invaders">
 					{ skills }
 				</div>
 				<div className="invader-gun" ref="gun"></div>
+				<div className="instructions">
+					<div className="arrows"><i>S</i><i>L</i><i></i><i>R</i></div>
+					<div className="mute" ref="mute" onClick={this.mute.bind(this)}></div>
+				</div>
 			</div>
 		)
 	}

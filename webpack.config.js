@@ -22,7 +22,9 @@ module.exports = {
             config: defaultSettings.srcPath + '/config/',
             styles: defaultSettings.srcPath + '/styles/',
             server: defaultSettings.srcPath + '/server/',
-            utils: defaultSettings.srcPath + '/utils/'
+            utils: defaultSettings.srcPath + '/utils/',
+            images: defaultSettings.srcPath + '/images/',
+            sounds: defaultSettings.srcPath + '/sounds/'
         }
     },
     devServer: {
