@@ -4,6 +4,12 @@
 	},
 	"projects": [
 		{
+			"title": "The HTML 500",
+			"description": "Project built using rails and jQuery",
+			"link": "http://www.thehtml500.com/",
+			"backgroundPosition": "0px -977px"
+		},
+		{
 			"title": "Cloverdale Business Improvement Agency",
 			"description": "Project built with Jekyll, Google maps API, jQuery and Sass/Bootstrap ",
 			"link": "http://www.cloverdalebia.com/",

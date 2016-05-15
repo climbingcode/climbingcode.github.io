@@ -1,4 +1,5 @@
 @import './mixins';
+@import './animations';
 
 $mountains-image: '../images/mountains.jpeg';
 
@@ -14,17 +15,6 @@ body {
     	margin: 0 auto;    
     	background-size: cover;
     	image-rendering: crisp-edges;
-    	.star {
-    		position: absolute;
-    		width: 2px;
-    		height: 2px;
-    		background: #fff;
-    		z-index: -1000;
-    		@include box-shadow(-1px, -48px, 49px, #fff);
-    	}
-        .shooting-star {
-            z-index: 0;
-        }
 		.close-mountains {
     		position: absolute;
     		width: 100px;

@@ -11,7 +11,7 @@ import About from 'components/About.jsx';
 import Skills from 'components/Skills.jsx';
 import Projects from 'components/Projects.jsx';
 import Blog from 'components/Blog.jsx';
-import Contact from 'components/Contact.jsx';
+import ContactController from 'components/ContactController.jsx';
 import Carousel from 'components/Carousel.jsx';
 import BlackHole from 'components/BlackHole.jsx';
 import Stars from 'components/Stars.jsx';
@@ -119,7 +119,7 @@ render	(	<Router history={browserHistory}>
 					<Route name="skills" path="/skills" component={Skills}/>	
 					<Route name="projects" path="/projects" component={Projects}/>
 					<Route name="blog" path="/blog" component={Blog}/>
-					<Route name="contact" path="/contact" component={Contact}/>
+					<Route name="contact" path="/contact" component={ContactController}/>
 				</Route>
 			</Router>, 
 			document.getElementById('content') 

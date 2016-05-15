@@ -87,7 +87,7 @@ class SpaceInvaders extends React.Component {
 
 	}
 
-	shotGun(left) {
+	shootLazer(left) {
 		var bottom = this.refs.gun.clientHeight;
 		var bullet = document.createElement('div');
 		bullet.className 	= 'bullet';
@@ -121,7 +121,7 @@ class SpaceInvaders extends React.Component {
 			var e = e || window.event;
 
 			if (e.keyCode == ARROWS.UP || e.keyCode == ARROWS.SPACE) {
-    			this.shotGun.call(this, left);
+    			this.shootLazer.call(this, left);
     		}
 		    else if (e.keyCode == ARROWS.RIGHT) {
 		    	if (this.hitBorder('left', gun, 70)) return;

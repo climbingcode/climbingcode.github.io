@@ -1,5 +1,7 @@
 import React from 'react';
 
+import 'styles/stars.scss';
+
 class Stars extends React.Component {
 
 	constructor(props) {
@@ -12,7 +14,7 @@ class Stars extends React.Component {
 	_getStars() {
 		var i = 0;
 		var stars = [];
-		while (i < this.state.maxStars) {
+		while (i < 100) {
 			let starX = Math.random()*window.innerWidth;
 			let starY = Math.random()*window.innerHeight;
 			let starStyle = {top: starY, left: starX};
@@ -29,22 +31,20 @@ class Stars extends React.Component {
 
 	_shootingStar() {
 		this.shootingStars = setInterval(() => {
-			let shootingStar = document.createElement('div');
-			let starY = Math.random()*window.innerHeight;
-			let starX = 0;
-			shootingStar.className  = 'star shooting-star';
-			shootingStar.style.left = starX;
-			shootingStar.style.top  = starY + 'px';
-			this.refs.stars.appendChild(shootingStar);
-			var moveShootingStar = setInterval(() => {
-				shootingStar.style.left = (starX+=5) + 'px';
-				shootingStar.style.top  = (starY+=1) + 'px';
-				if (this._isOutOfBounds(shootingStar)) {
-					clearInterval(moveShootingStar);
-					shootingStar.parentNode.removeChild(shootingStar);
-				}
-			}, 10);
-		}, 3000);
+			let shootingStar 		  = document.createElement('div');
+			let shootingStarContainer = document.createElement('div');
+			let starY 				  = Math.random()*window.innerHeight;
+			let containerHeight       = starY / 3;
+			shootingStarContainer.className = 'shooting-star-container';
+			shootingStarContainer.style.height = containerHeight + 'px'; 
+			shootingStarContainer.style.top  = starY + 'px';
+			shootingStar.className  = 'star move';
+			shootingStarContainer.appendChild(shootingStar);
+			this.refs.stars.appendChild(shootingStarContainer);
+			setTimeout(() => {
+				shootingStarContainer.parentNode.removeChild(shootingStarContainer);
+			}, 4000);
+		}, 5000);
 	}
 
 	componentDidMount() {

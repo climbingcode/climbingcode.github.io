@@ -7,8 +7,8 @@ $sprite: '../images/sprite.png';
 	height: 100%;
 	.invaders-group {
 		position: relative;
-		width: 75vw;
-		min-width: 1000px;
+		width: 946px;
+    	min-width: 946px;
 		z-index: -100;
 		.invader {
 			display: inline-block;
@@ -41,8 +41,12 @@ $sprite: '../images/sprite.png';
 	.bullet {
 		position: fixed;
 		width: 5px;
-		height: 5px;
+		height: 15px;
 		background: green;
+		z-index: 1000;
+		animation: shoot-lazer 3s;
+		-webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    	animation-timing-function: linear;
 	}
 	.instructions {
 		position: fixed;

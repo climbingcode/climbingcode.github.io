@@ -1,6 +1,9 @@
 @import 'mixins.scss';
 
 .contact {
+    h2 {
+        z-index: 1000;
+    }
 	position: relative;
     margin: 0 auto;
     width: 73%;

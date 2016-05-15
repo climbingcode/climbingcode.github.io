@@ -1,0 +1,26 @@
+@-webkit-keyframes shooting-star {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+}
+
+@-webkit-keyframes shooting-star-off-angle {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes shoot-lazer {
+	from {
+		bottom: 0;
+	}
+	to {
+		bottom: 100vh;
+	}
+}
