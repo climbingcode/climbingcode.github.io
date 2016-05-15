@@ -113,7 +113,8 @@ class Layout extends React.Component {
 	}
 }
 
-render	(	<Router history={browserHistory}>
+render	(	
+			<Router history={browserHistory}>
 				<Route name="app" path="/" component={Layout}>
 					<Route name="about" path="/about" component={About}/>
 					<Route name="skills" path="/skills" component={Skills}/>	

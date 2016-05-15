@@ -67,19 +67,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Mountains = __webpack_require__(231);
+	var _Mountains = __webpack_require__(232);
 
 	var _Mountains2 = _interopRequireDefault(_Mountains);
 
-	var _Footer = __webpack_require__(232);
+	var _Footer = __webpack_require__(233);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _About = __webpack_require__(235);
+	var _About = __webpack_require__(236);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Skills = __webpack_require__(240);
+	var _Skills = __webpack_require__(241);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
@@ -25733,7 +25733,7 @@
 	var content = __webpack_require__(228);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25758,7 +25758,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px;\n      float: left; }\n    nav .title .icons {\n      float: right;\n      margin: 0 35px; }\n      nav .title .icons span {\n        display: inline-block;\n        height: 30px;\n        width: 30px;\n        background: blue;\n        cursor: pointer;\n        background: url(" + __webpack_require__(243) + ") no-repeat; }\n      nav .title .icons .linkin {\n        margin-left: 10px;\n        background-position: -619px -344px; }\n      nav .title .icons .github {\n        background-position: -651px -344px; }\n", ""]);
+	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px;\n      float: left; }\n    nav .title .icons {\n      float: right;\n      margin: 0 35px; }\n      nav .title .icons span {\n        display: inline-block;\n        height: 30px;\n        width: 30px;\n        background: blue;\n        cursor: pointer;\n        background: url(" + __webpack_require__(230) + ") no-repeat; }\n      nav .title .icons .linkin {\n        margin-left: 10px;\n        background-position: -619px -344px; }\n      nav .title .icons .github {\n        background-position: -651px -344px; }\n", ""]);
 
 	// exports
 
@@ -25821,6 +25821,12 @@
 
 /***/ },
 /* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "7d46fb7e06dc9c196cb296d5addd5414.png";
+
+/***/ },
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -26072,7 +26078,7 @@
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26124,7 +26130,7 @@
 	exports.default = Mountains;
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26147,7 +26153,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(233);
+	__webpack_require__(234);
 
 	var Footer = function (_React$Component) {
 		_inherits(Footer, _React$Component);
@@ -26175,16 +26181,16 @@
 	exports.default = Footer;
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(234);
+	var content = __webpack_require__(235);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26201,7 +26207,7 @@
 	}
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26215,7 +26221,7 @@
 
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26230,11 +26236,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _content = __webpack_require__(236);
+	var _content = __webpack_require__(237);
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(237);
+	__webpack_require__(238);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26275,7 +26281,7 @@
 	exports.default = About;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -26391,16 +26397,16 @@
 	};
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(238);
+	var content = __webpack_require__(239);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26417,7 +26423,7 @@
 	}
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26425,19 +26431,19 @@
 
 
 	// module
-	exports.push([module.id, ".about {\n  margin: 0px 100px; }\n  .about .me {\n    width: 236px;\n    height: 236px;\n    margin: 0 30px;\n    float: left;\n    font-weight: 12px;\n    background: url(" + __webpack_require__(239) + ") 0 0 no-repeat; }\n  .about p {\n    font-family: 'pluto'; }\n", ""]);
+	exports.push([module.id, ".about {\n  margin: 0px 100px; }\n  .about .me {\n    width: 236px;\n    height: 236px;\n    margin: 0 30px;\n    float: left;\n    font-weight: 12px;\n    background: url(" + __webpack_require__(240) + ") 0 0 no-repeat; }\n  .about p {\n    font-family: 'pluto'; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e0ee4ee76ef30c3582d4cec8db3b1d9d.jpeg";
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26452,7 +26458,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(241);
+	__webpack_require__(242);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26501,16 +26507,16 @@
 	exports.default = Skills;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(242);
+	var content = __webpack_require__(243);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26527,7 +26533,7 @@
 	}
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26535,16 +26541,10 @@
 
 
 	// module
-	exports.push([module.id, ".invader .skills {\n  position: relative;\n  background: url(" + __webpack_require__(243) + ") no-repeat;\n  width: 100%;\n  height: 100%; }\n  .invader .skills .skill-meter {\n    position: absolute;\n    opacity: 0;\n    bottom: -20px;\n    height: 15px;\n    width: 100%;\n    background: #fff;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n    .invader .skills .skill-meter div {\n      width: 0;\n      height: 100%;\n      background: green;\n      transition: width 1s ease-in;\n      -webkit-transition: width 1s ease-in; }\n\n.invader.hit .skill-meter {\n  display: block;\n  opacity: 0.7; }\n", ""]);
+	exports.push([module.id, ".invader .skills {\n  position: relative;\n  background: url(" + __webpack_require__(230) + ") no-repeat;\n  width: 100%;\n  height: 100%; }\n  .invader .skills .skill-meter {\n    position: absolute;\n    opacity: 0;\n    bottom: -20px;\n    height: 15px;\n    width: 100%;\n    background: #fff;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n    .invader .skills .skill-meter div {\n      width: 0;\n      height: 100%;\n      background: green;\n      transition: width 1s ease-in;\n      -webkit-transition: width 1s ease-in; }\n\n.invader.hit .skill-meter {\n  display: block;\n  opacity: 0.7; }\n", ""]);
 
 	// exports
 
-
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "7d46fb7e06dc9c196cb296d5addd5414.png";
 
 /***/ },
 /* 244 */
@@ -26562,7 +26562,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _content = __webpack_require__(236);
+	var _content = __webpack_require__(237);
 
 	var _content2 = _interopRequireDefault(_content);
 
@@ -26640,7 +26640,7 @@
 	var content = __webpack_require__(246);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26692,7 +26692,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(241);
+	__webpack_require__(242);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26917,7 +26917,7 @@
 	var content = __webpack_require__(252);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26942,7 +26942,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 49%;\n  top: 25%; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 100%;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer;\n    color: #fff; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-spin {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.contact {\n  position: relative;\n  margin: 0 auto;\n  width: 700px;\n  top: 20%;\n  animation: expand-spin 2s linear; }\n  .contact input, .contact textarea {\n    font-family: 'pluto';\n    display: block;\n    width: 60%;\n    padding: 15px 0;\n    margin: 10px auto;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer;\n    color: #fff; }\n  .contact input::-webkit-input-placeholder {\n    color: #fff;\n    font-size: 1.5em; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact textarea::-webkit-input-placeholder {\n    color: #fff;\n    font-size: 1em; }\n  .contact button {\n    font-family: 'pluto';\n    font-size: 18px;\n    width: 50%;\n    margin: 0 auto;\n    display: block;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in;\n    font-size: 1.5em; }\n  .contact button:hover {\n    background: #000;\n    border: solid 1px #fff;\n    cursor: pointer; }\n", ""]);
 
 	// exports
 
@@ -26967,7 +26967,7 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _content = __webpack_require__(236);
+	var _content = __webpack_require__(237);
 
 	var _content2 = _interopRequireDefault(_content);
 
@@ -27047,7 +27047,7 @@
 	var content = __webpack_require__(255);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27087,7 +27087,7 @@
 	var content = __webpack_require__(257);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27178,7 +27178,7 @@
 	var content = __webpack_require__(260);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27203,7 +27203,7 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.black-hole {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  width: 700px;\n  height: 700px;\n  margin: 0 auto;\n  animation: expand-blackhole 1s linear;\n  background: url(" + __webpack_require__(261) + ") 0 0 no-repeat;\n  background-size: contain;\n  border-radius: 100%; }\n  .black-hole h2 {\n    z-index: 1000;\n    top: 40%;\n    position: relative;\n    text-align: center; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-spin {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.black-hole {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  width: 700px;\n  height: 700px;\n  margin: 0 auto;\n  animation: expand-spin 2s linear;\n  background: url(" + __webpack_require__(261) + ") 0 0 no-repeat;\n  background-size: contain;\n  border-radius: 100%; }\n  .black-hole h2 {\n    font-family: 'pluto';\n    z-index: 1000;\n    top: 40%;\n    position: relative;\n    text-align: center; }\n", ""]);
 
 	// exports
 
@@ -27331,7 +27331,7 @@
 	var content = __webpack_require__(264);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27356,7 +27356,7 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.star {\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  background: #fff;\n  z-index: -1000;\n  -webkit-box-shadow: -1px -48px 49px #fff;\n  -moz-box-shadow: -1px -48px 49px #fff;\n  box-shadow: -1px -48px 49px #fff; }\n\n.shooting-star-container {\n  position: absolute;\n  z-index: 0;\n  animation: shooting-star 4s linear; }\n  .shooting-star-container .star {\n    top: 0;\n    margin-top: 0px;\n    position: relative;\n    animation: shooting-star-off-angle 4s linear; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-spin {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.star {\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  background: #fff;\n  z-index: -1000;\n  -webkit-box-shadow: -1px -48px 49px #fff;\n  -moz-box-shadow: -1px -48px 49px #fff;\n  box-shadow: -1px -48px 49px #fff; }\n\n.shooting-star-container {\n  position: absolute;\n  z-index: 0;\n  animation: shooting-star 4s linear; }\n  .shooting-star-container .star {\n    top: 0;\n    margin-top: 0px;\n    position: relative;\n    animation: shooting-star-off-angle 4s linear; }\n", ""]);
 
 	// exports
 
@@ -27377,11 +27377,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Skills = __webpack_require__(240);
+	var _Skills = __webpack_require__(241);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
-	var _content = __webpack_require__(236);
+	var _content = __webpack_require__(237);
 
 	var _content2 = _interopRequireDefault(_content);
 
@@ -27625,7 +27625,7 @@
 	var content = __webpack_require__(267);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27650,7 +27650,7 @@
 
 
 	// module
-	exports.push([module.id, ".space-invaders {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100%; }\n  .space-invaders .invaders-group {\n    position: relative;\n    width: 946px;\n    min-width: 946px;\n    z-index: -100; }\n    .space-invaders .invaders-group .invader {\n      display: inline-block;\n      margin: 10px 15px; }\n  .space-invaders .invader-gun {\n    position: fixed;\n    z-index: 1000;\n    bottom: 0;\n    left: 10; }\n    .space-invaders .invader-gun::after {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 100px;\n      height: 30px; }\n    .space-invaders .invader-gun::before {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 20px;\n      height: 30px;\n      margin: 0 auto; }\n  .space-invaders .bullet {\n    position: fixed;\n    width: 5px;\n    height: 15px;\n    background: green;\n    z-index: 1000;\n    animation: shoot-lazer 3s;\n    -webkit-animation-timing-function: linear;\n    /* Chrome, Safari, Opera */\n    animation-timing-function: linear; }\n  .space-invaders .instructions {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    width: 185px;\n    height: 20px;\n    z-index: 10000; }\n    .space-invaders .instructions .arrows {\n      position: absolute;\n      float: right;\n      bottom: 5px;\n      right: 5px;\n      display: inline; }\n      .space-invaders .instructions .arrows i:first-child {\n        display: block;\n        margin: 0 auto;\n        margin-bottom: 2px; }\n      .space-invaders .instructions .arrows i {\n        display: inline-block;\n        width: 30px;\n        height: 15px;\n        background: #EF6565;\n        line-height: 18px;\n        margin: 4px 3px -3px;\n        text-align: center;\n        font-family: 'pluto';\n        font-size: 10px; }\n    .space-invaders .instructions .mute {\n      width: 20px;\n      height: 40px;\n      margin: -5px 25px;\n      background: url(" + __webpack_require__(243) + ") no-repeat -25px -441px; }\n      .space-invaders .instructions .mute.muted {\n        background-position: 0 -441px; }\n", ""]);
+	exports.push([module.id, ".space-invaders {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100%; }\n  .space-invaders .invaders-group {\n    position: relative;\n    width: 946px;\n    min-width: 946px;\n    z-index: -100; }\n    .space-invaders .invaders-group .invader {\n      display: inline-block;\n      margin: 10px 15px; }\n  .space-invaders .invader-gun {\n    position: fixed;\n    z-index: 1000;\n    bottom: 0;\n    left: 10; }\n    .space-invaders .invader-gun::after {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 100px;\n      height: 30px; }\n    .space-invaders .invader-gun::before {\n      content: '';\n      display: block;\n      background: green;\n      opacity: 0.9;\n      width: 20px;\n      height: 30px;\n      margin: 0 auto; }\n  .space-invaders .bullet {\n    position: fixed;\n    width: 5px;\n    height: 15px;\n    background: green;\n    z-index: 1000;\n    animation: shoot-lazer 3s;\n    -webkit-animation-timing-function: linear;\n    /* Chrome, Safari, Opera */\n    animation-timing-function: linear; }\n  .space-invaders .instructions {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    width: 185px;\n    height: 20px;\n    z-index: 10000; }\n    .space-invaders .instructions .arrows {\n      position: absolute;\n      float: right;\n      bottom: 5px;\n      right: 5px;\n      display: inline; }\n      .space-invaders .instructions .arrows i:first-child {\n        display: block;\n        margin: 0 auto;\n        margin-bottom: 2px; }\n      .space-invaders .instructions .arrows i {\n        display: inline-block;\n        width: 30px;\n        height: 15px;\n        background: #EF6565;\n        line-height: 18px;\n        margin: 4px 3px -3px;\n        text-align: center;\n        font-family: 'pluto';\n        font-size: 10px; }\n    .space-invaders .instructions .mute {\n      width: 20px;\n      height: 40px;\n      margin: -5px 25px;\n      background: url(" + __webpack_require__(230) + ") no-repeat -25px -441px; }\n      .space-invaders .instructions .mute.muted {\n        background-position: 0 -441px; }\n", ""]);
 
 	// exports
 
@@ -27671,7 +27671,7 @@
 	var content = __webpack_require__(270);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27723,7 +27723,7 @@
 	var content = __webpack_require__(274);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
+	var update = __webpack_require__(231)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27748,7 +27748,7 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(275) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-spin {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(275) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
 
 	// exports
 

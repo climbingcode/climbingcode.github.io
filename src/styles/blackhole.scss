@@ -9,12 +9,13 @@
     width: 700px;
     height: 700px;
     margin: 0 auto;
-    animation: expand-blackhole 1s linear;
+    animation: expand-spin 2s linear;
     background: url(../images/blackhole.png) 0 0 no-repeat;
     background-size: contain;
     border-radius: 100%;
     // @include drop-shadow(-2px, 5px, 151px, white);
     h2 {
+        font-family: 'pluto';
         z-index: 1000;
         top: 40%;
         position: relative;
