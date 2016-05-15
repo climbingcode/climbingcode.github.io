@@ -11,8 +11,9 @@ class ContactController extends React.Component {
 			contact: {
 				name: '',
 				email: '',
-				discription: ''
-			}
+				description: ''
+			},
+			contactSent: false
 		}
 	}
 
@@ -24,14 +25,14 @@ class ContactController extends React.Component {
 					{	
 						name: this.state.name,
 						email: this.state.email, 
-						content: this.state.content
+						content: this.state.description
 					}
 		).then(
 		(res) => {
+			var contact = this.state.contact;
 			this.setState({
-				name: '',
-				email: '',
-				description: ''
+				contact,
+				contactSent: true
 			});
 		},
 		(err) => {
@@ -40,22 +41,26 @@ class ContactController extends React.Component {
 	}
 
 	inputChanged(e) {
-		var feildName 	= e.target.name;
-		var fieldValue	= e.target.value;
-		var contact	    = this.state.contact;
+		var feildName 	   = e.target.name;
+		var fieldValue	   = e.target.value;
+		var contact	       = this.state.contact;
 		contact[feildName] = fieldValue;
 		this.setState(contact);
 	}
 
 	render() {
 
+		if (this.state.contactSent) {
+			var $content =  <h2>Thanks for the message, {this.state.contact.name}</h2>;	
+		} else {
+			var $content =  <ContactForm inputChanged={this.inputChanged.bind(this)}
+						 				 submit={this.submit.bind(this)}
+						 				 contact={this.state.contact}
+							/>;
+		}
+
 		return (
-
-			<ContactForm inputChanged={this.inputChanged.bind(this)}
-						 submit={this.submit.bind(this)}
-						 contact={this.state.contact}
-			/>
-
+			$content
       	)
 	}
 

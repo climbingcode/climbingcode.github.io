@@ -1,16 +1,13 @@
 @import 'mixins.scss';
 
 .contact {
-    h2 {
-        z-index: 1000;
-    }
-	position: relative;
+    position: relative;
     margin: 0 auto;
-    width: 73%;
-	top: 20%;
+    width: 49%;
+    top: 25%;
 	input, textarea {
     	display: block;
-    	width: 352px;
+    	width: 100%;
     	padding: 15px 0;
     	margin: 10px 0;
     	background: transparent;

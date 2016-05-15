@@ -1,14 +1,23 @@
 @import 'mixins.scss';
+@import 'animations.scss';
 
 .black-hole {
-	position: absolute;
-	top: 50px;
-	left: 0;
-	right: 0;	
-    width: 500px;
-    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
     margin: 0 auto;
-    background: #000;
+    animation: expand-blackhole 1s linear;
+    background: url(../images/blackhole.png) 0 0 no-repeat;
+    background-size: contain;
     border-radius: 100%;
-    @include drop-shadow(-2px, 5px, 151px, white);
+    // @include drop-shadow(-2px, 5px, 151px, white);
+    h2 {
+        z-index: 1000;
+        top: 40%;
+        position: relative;
+        text-align: center;
+    }
 } 

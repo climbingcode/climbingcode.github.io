@@ -91,29 +91,29 @@
 
 	var _Blog2 = _interopRequireDefault(_Blog);
 
-	var _ContactController = __webpack_require__(276);
+	var _ContactController = __webpack_require__(249);
 
 	var _ContactController2 = _interopRequireDefault(_ContactController);
 
-	var _Carousel = __webpack_require__(254);
+	var _Carousel = __webpack_require__(253);
 
 	var _Carousel2 = _interopRequireDefault(_Carousel);
 
-	var _BlackHole = __webpack_require__(259);
+	var _BlackHole = __webpack_require__(258);
 
 	var _BlackHole2 = _interopRequireDefault(_BlackHole);
 
-	var _Stars = __webpack_require__(262);
+	var _Stars = __webpack_require__(261);
 
 	var _Stars2 = _interopRequireDefault(_Stars);
 
-	var _SpaceInvaders = __webpack_require__(263);
+	var _SpaceInvaders = __webpack_require__(264);
 
 	var _SpaceInvaders2 = _interopRequireDefault(_SpaceInvaders);
 
-	__webpack_require__(267);
+	__webpack_require__(268);
 
-	__webpack_require__(271);
+	__webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26714,14 +26714,193 @@
 	exports.default = Blog;
 
 /***/ },
-/* 249 */,
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _ContactFormView = __webpack_require__(250);
+
+	var _ContactFormView2 = _interopRequireDefault(_ContactFormView);
+
+	__webpack_require__(251);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContactController = function (_React$Component) {
+		_inherits(ContactController, _React$Component);
+
+		function ContactController(props) {
+			_classCallCheck(this, ContactController);
+
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ContactController).call(this, props));
+
+			_this.state = {
+				contact: {
+					name: '',
+					email: '',
+					description: ''
+				},
+				contactSent: false
+			};
+			return _this;
+		}
+
+		_createClass(ContactController, [{
+			key: 'submit',
+			value: function submit(event) {
+				var _this2 = this;
+
+				event.preventDefault();
+
+				emailjs.send("default_service", "contact_form", {
+					name: this.state.name,
+					email: this.state.email,
+					content: this.state.description
+				}).then(function (res) {
+					var contact = _this2.state.contact;
+					_this2.setState({
+						contact: contact,
+						contactSent: true
+					});
+				}, function (err) {
+					console.log(err);
+				});
+			}
+		}, {
+			key: 'inputChanged',
+			value: function inputChanged(e) {
+				var feildName = e.target.name;
+				var fieldValue = e.target.value;
+				var contact = this.state.contact;
+				contact[feildName] = fieldValue;
+				this.setState(contact);
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+
+				if (this.state.contactSent) {
+					var $content = _react2.default.createElement(
+						'h2',
+						null,
+						'Thanks for the message, ',
+						this.state.contact.name
+					);
+				} else {
+					var $content = _react2.default.createElement(_ContactFormView2.default, { inputChanged: this.inputChanged.bind(this),
+						submit: this.submit.bind(this),
+						contact: this.state.contact
+					});
+				}
+
+				return $content;
+			}
+		}]);
+
+		return ContactController;
+	}(_react2.default.Component);
+
+	exports.default = ContactController;
+
+/***/ },
 /* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContactFormView = function (_React$Component) {
+	  _inherits(ContactFormView, _React$Component);
+
+	  function ContactFormView(props) {
+	    _classCallCheck(this, ContactFormView);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ContactFormView).call(this, props));
+	  }
+
+	  _createClass(ContactFormView, [{
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+
+	      return _react2.default.createElement('form', {
+	        className: 'contact',
+	        onSubmit: this.props.submit
+	      }, _react2.default.createElement('input', {
+	        type: 'text',
+	        placeholder: 'Name',
+	        name: 'name',
+	        value: this.props.contact.name,
+	        onChange: function onChange(e) {
+	          _this2.props.inputChanged(e);
+	        }
+	      }), _react2.default.createElement('input', {
+	        type: 'email',
+	        placeholder: 'Email',
+	        name: 'email',
+	        value: this.props.contact.email,
+	        onChange: function onChange(e) {
+	          _this2.props.inputChanged(e);
+	        }
+	      }), _react2.default.createElement('textarea', {
+	        type: 'description',
+	        placeholder: 'Description',
+	        name: 'description',
+	        value: this.props.contact.description,
+	        onChange: function onChange(e) {
+	          _this2.props.inputChanged(e);
+	        }
+	      }), _react2.default.createElement('button', { type: 'submit' }, "Submit Email"));
+	    }
+	  }]);
+
+	  return ContactFormView;
+	}(_react2.default.Component);
+
+	exports.default = ContactFormView;
+
+/***/ },
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(251);
+	var content = __webpack_require__(252);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26741,7 +26920,7 @@
 	}
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26749,15 +26928,13 @@
 
 
 	// module
-	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 73%;\n  top: 20%; }\n  .contact h2 {\n    z-index: 1000; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 352px;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
+	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 49%;\n  top: 25%; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 100%;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 252 */,
-/* 253 */,
-/* 254 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26780,9 +26957,9 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(255);
+	__webpack_require__(254);
 
-	__webpack_require__(257);
+	__webpack_require__(256);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26847,13 +27024,13 @@
 	exports.default = Carousel;
 
 /***/ },
-/* 255 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(256);
+	var content = __webpack_require__(255);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26873,7 +27050,7 @@
 	}
 
 /***/ },
-/* 256 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26887,13 +27064,13 @@
 
 
 /***/ },
-/* 257 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(258);
+	var content = __webpack_require__(257);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -26913,7 +27090,7 @@
 	}
 
 /***/ },
-/* 258 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -26927,7 +27104,7 @@
 
 
 /***/ },
-/* 259 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26942,7 +27119,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(260);
+	__webpack_require__(259);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26978,13 +27155,13 @@
 	exports.default = BlackHole;
 
 /***/ },
-/* 260 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(261);
+	var content = __webpack_require__(260);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27004,7 +27181,7 @@
 	}
 
 /***/ },
-/* 261 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27012,13 +27189,13 @@
 
 
 	// module
-	exports.push([module.id, ".black-hole {\n  position: absolute;\n  top: 50px;\n  left: 0;\n  right: 0;\n  width: 500px;\n  height: 500px;\n  margin: 0 auto;\n  background: #000;\n  border-radius: 100%;\n  filter: drop-shadow(-2px 5px 151px white);\n  -webkit-filter: drop-shadow(-2px 5px 151px white); }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.black-hole {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  width: 700px;\n  height: 700px;\n  margin: 0 auto;\n  animation: expand-blackhole 1s linear;\n  background: url(" + __webpack_require__(275) + ") 0 0 no-repeat;\n  background-size: contain;\n  border-radius: 100%; }\n  .black-hole h2 {\n    z-index: 1000;\n    top: 40%;\n    position: relative;\n    text-align: center; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 262 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27033,7 +27210,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(274);
+	__webpack_require__(262);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27125,7 +27302,47 @@
 	exports.default = Stars;
 
 /***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(263);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(230)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./stars.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./stars.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(229)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.star {\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  background: #fff;\n  z-index: -1000;\n  -webkit-box-shadow: -1px -48px 49px #fff;\n  -moz-box-shadow: -1px -48px 49px #fff;\n  box-shadow: -1px -48px 49px #fff; }\n\n.shooting-star-container {\n  position: absolute;\n  z-index: 0;\n  animation: shooting-star 4s linear; }\n  .shooting-star-container .star {\n    top: 0;\n    margin-top: 0px;\n    position: relative;\n    animation: shooting-star-off-angle 4s linear; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27148,9 +27365,9 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(264);
+	__webpack_require__(265);
 
-	var _lazer = __webpack_require__(266);
+	var _lazer = __webpack_require__(267);
 
 	var _lazer2 = _interopRequireDefault(_lazer);
 
@@ -27379,13 +27596,13 @@
 	exports.default = SpaceInvaders;
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(265);
+	var content = __webpack_require__(266);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27405,7 +27622,7 @@
 	}
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27419,19 +27636,19 @@
 
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c6e1dc4f9bb8f71c5c73fb46eb8d4a8c.wav";
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(268);
+	var content = __webpack_require__(269);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27451,7 +27668,7 @@
 	}
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27459,31 +27676,31 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(269) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Pluto';\n  src: url(" + __webpack_require__(270) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(270) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Pluto';\n  src: url(" + __webpack_require__(271) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "public/fonts/Skinny-Regular.ttf";
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "public/fonts/pluto.ttf";
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(272);
+	var content = __webpack_require__(273);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27503,7 +27720,7 @@
 	}
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27511,224 +27728,22 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(273) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(274) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
 
 	// exports
 
-
-/***/ },
-/* 273 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
 
 /***/ },
 /* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(275);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./stars.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js?sourceMap!./stars.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
 
 /***/ },
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n.star {\n  position: absolute;\n  width: 2px;\n  height: 2px;\n  background: #fff;\n  z-index: -1000;\n  -webkit-box-shadow: -1px -48px 49px #fff;\n  -moz-box-shadow: -1px -48px 49px #fff;\n  box-shadow: -1px -48px 49px #fff; }\n\n.shooting-star-container {\n  position: absolute;\n  z-index: 0;\n  animation: shooting-star 4s linear; }\n  .shooting-star-container .star {\n    top: 0;\n    margin-top: 0px;\n    position: relative;\n    animation: shooting-star-off-angle 4s linear; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 276 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _ContactFormView = __webpack_require__(277);
-
-	var _ContactFormView2 = _interopRequireDefault(_ContactFormView);
-
-	__webpack_require__(250);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ContactController = function (_React$Component) {
-		_inherits(ContactController, _React$Component);
-
-		function ContactController(props) {
-			_classCallCheck(this, ContactController);
-
-			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ContactController).call(this, props));
-
-			_this.state = {
-				contact: {
-					name: '',
-					email: '',
-					discription: ''
-				}
-			};
-			return _this;
-		}
-
-		_createClass(ContactController, [{
-			key: 'submit',
-			value: function submit(event) {
-				var _this2 = this;
-
-				event.preventDefault();
-
-				emailjs.send("default_service", "contact_form", {
-					name: this.state.name,
-					email: this.state.email,
-					content: this.state.content
-				}).then(function (res) {
-					_this2.setState({
-						name: '',
-						email: '',
-						description: ''
-					});
-				}, function (err) {
-					console.log(err);
-				});
-			}
-		}, {
-			key: 'inputChanged',
-			value: function inputChanged(e) {
-				var feildName = e.target.name;
-				var fieldValue = e.target.value;
-				var contact = this.state.contact;
-				contact[feildName] = fieldValue;
-				this.setState(contact);
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-
-				return _react2.default.createElement(_ContactFormView2.default, { inputChanged: this.inputChanged.bind(this),
-					submit: this.submit.bind(this),
-					contact: this.state.contact
-				});
-			}
-		}]);
-
-		return ContactController;
-	}(_react2.default.Component);
-
-	exports.default = ContactController;
-
-/***/ },
-/* 277 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ContactFormView = function (_React$Component) {
-	  _inherits(ContactFormView, _React$Component);
-
-	  function ContactFormView(props) {
-	    _classCallCheck(this, ContactFormView);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ContactFormView).call(this, props));
-	  }
-
-	  _createClass(ContactFormView, [{
-	    key: 'render',
-	    value: function render() {
-	      var _this2 = this;
-
-	      return _react2.default.createElement('form', {
-	        className: 'contact',
-	        onSubmit: this.props.submit
-	      }, _react2.default.createElement('input', {
-	        type: 'text',
-	        placeholder: 'Name',
-	        name: 'name',
-	        value: this.props.contact.name,
-	        onChange: function onChange(e) {
-	          _this2.props.inputChanged(e);
-	        }
-	      }), _react2.default.createElement('input', {
-	        type: 'email',
-	        placeholder: 'Email',
-	        name: 'email',
-	        value: this.props.contact.email,
-	        onChange: function onChange(e) {
-	          _this2.props.inputChanged(e);
-	        }
-	      }), _react2.default.createElement('textarea', {
-	        type: 'description',
-	        placeholder: 'Description',
-	        name: 'description',
-	        value: this.props.contact.description,
-	        onChange: function onChange(e) {
-	          _this2.props.inputChanged(e);
-	        }
-	      }), _react2.default.createElement('button', { type: 'submit' }, "Submit Email"));
-	    }
-	  }]);
-
-	  return ContactFormView;
-	}(_react2.default.Component);
-
-	exports.default = ContactFormView;
+	module.exports = __webpack_require__.p + "e148749cdfc49494c5a92e43bf9611e2.png";
 
 /***/ }
 /******/ ]);
