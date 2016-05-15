@@ -25,7 +25,16 @@ class Nav extends React.Component {
 				</div>
 				<div className="title">
 					<h4>Thomas Davis</h4>
-					<p>Web Developer</p>
+					<p>Web Developer	
+					</p>
+					<div className="icons">
+						<a href="https://ca.linkedin.com/in/tom-davis-b19a7239" target="_blank">
+							<span className="linkin"></span>
+						</a>
+						<a href="https://github.com/climbingcode" target="_blank">
+							<span className="github"></span>
+						</a>
+					</div>
 				</div>
 			</nav>	
 		)

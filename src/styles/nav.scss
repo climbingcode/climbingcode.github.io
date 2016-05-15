@@ -26,6 +26,28 @@ nav {
 		p {
 			margin: 5px 0;
 			font-size: 30px;
+			float: left;
+			
 		}
+		.icons {
+			float: right;
+			margin: 0 35px;
+			span {
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				background: blue;
+				cursor: pointer;
+				background: url(../images/sprite.png) no-repeat;
+			}
+			.linkin {
+				margin-left: 10px;
+				background-position: -619px -344px;
+			}
+			.github {
+				background-position: -651px -344px;
+			}
+		}
+		
 	}
 }

@@ -103,17 +103,17 @@
 
 	var _BlackHole2 = _interopRequireDefault(_BlackHole);
 
-	var _Stars = __webpack_require__(261);
+	var _Stars = __webpack_require__(262);
 
 	var _Stars2 = _interopRequireDefault(_Stars);
 
-	var _SpaceInvaders = __webpack_require__(264);
+	var _SpaceInvaders = __webpack_require__(265);
 
 	var _SpaceInvaders2 = _interopRequireDefault(_SpaceInvaders);
 
-	__webpack_require__(268);
+	__webpack_require__(269);
 
-	__webpack_require__(272);
+	__webpack_require__(273);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25698,6 +25698,20 @@
 							'p',
 							null,
 							'Web Developer'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'icons' },
+							_react2.default.createElement(
+								'a',
+								{ href: 'https://ca.linkedin.com/in/tom-davis-b19a7239', target: '_blank' },
+								_react2.default.createElement('span', { className: 'linkin' })
+							),
+							_react2.default.createElement(
+								'a',
+								{ href: 'https://github.com/climbingcode', target: '_blank' },
+								_react2.default.createElement('span', { className: 'github' })
+							)
 						)
 					)
 				);
@@ -25744,7 +25758,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px; }\n", ""]);
+	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px;\n      float: left; }\n    nav .title .icons {\n      float: right;\n      margin: 0 35px; }\n      nav .title .icons span {\n        display: inline-block;\n        height: 30px;\n        width: 30px;\n        background: blue;\n        cursor: pointer;\n        background: url(" + __webpack_require__(243) + ") no-repeat; }\n      nav .title .icons .linkin {\n        margin-left: 10px;\n        background-position: -619px -344px; }\n      nav .title .icons .github {\n        background-position: -651px -344px; }\n", ""]);
 
 	// exports
 
@@ -26530,7 +26544,7 @@
 /* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "91ca24ea2775378b96501d4494444df2.png";
+	module.exports = __webpack_require__.p + "7d46fb7e06dc9c196cb296d5addd5414.png";
 
 /***/ },
 /* 244 */
@@ -26928,7 +26942,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 49%;\n  top: 25%; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 100%;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
+	exports.push([module.id, ".contact {\n  position: relative;\n  margin: 0 auto;\n  width: 49%;\n  top: 25%; }\n  .contact input, .contact textarea {\n    display: block;\n    width: 100%;\n    padding: 15px 0;\n    margin: 10px 0;\n    background: transparent;\n    color: white;\n    border: none;\n    text-align: center;\n    font-size: 24px;\n    cursor: pointer;\n    color: #fff; }\n  .contact textarea {\n    font-size: 12px;\n    height: 50px; }\n  .contact button {\n    font-size: 18px;\n    width: 100%;\n    padding: 10px 0;\n    background: transparent;\n    border: solid 1px #fff;\n    color: #fff;\n    cursor: pointer;\n    transition: all 0.5s ease-in;\n    -webkit-transition: all 0.5s ease-in; }\n  .contact button:hover {\n    background: #fff;\n    color: #000;\n    cursor: pointer; }\n", ""]);
 
 	// exports
 
@@ -27189,13 +27203,19 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.black-hole {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  width: 700px;\n  height: 700px;\n  margin: 0 auto;\n  animation: expand-blackhole 1s linear;\n  background: url(" + __webpack_require__(275) + ") 0 0 no-repeat;\n  background-size: contain;\n  border-radius: 100%; }\n  .black-hole h2 {\n    z-index: 1000;\n    top: 40%;\n    position: relative;\n    text-align: center; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\n.black-hole {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  width: 700px;\n  height: 700px;\n  margin: 0 auto;\n  animation: expand-blackhole 1s linear;\n  background: url(" + __webpack_require__(261) + ") 0 0 no-repeat;\n  background-size: contain;\n  border-radius: 100%; }\n  .black-hole h2 {\n    z-index: 1000;\n    top: 40%;\n    position: relative;\n    text-align: center; }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e148749cdfc49494c5a92e43bf9611e2.png";
+
+/***/ },
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27210,7 +27230,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(262);
+	__webpack_require__(263);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27302,13 +27322,13 @@
 	exports.default = Stars;
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(263);
+	var content = __webpack_require__(264);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27328,7 +27348,7 @@
 	}
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27342,7 +27362,7 @@
 
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27365,9 +27385,9 @@
 
 	var _content2 = _interopRequireDefault(_content);
 
-	__webpack_require__(265);
+	__webpack_require__(266);
 
-	var _lazer = __webpack_require__(267);
+	var _lazer = __webpack_require__(268);
 
 	var _lazer2 = _interopRequireDefault(_lazer);
 
@@ -27596,13 +27616,13 @@
 	exports.default = SpaceInvaders;
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(266);
+	var content = __webpack_require__(267);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27622,7 +27642,7 @@
 	}
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27636,19 +27656,19 @@
 
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c6e1dc4f9bb8f71c5c73fb46eb8d4a8c.wav";
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(269);
+	var content = __webpack_require__(270);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27668,7 +27688,7 @@
 	}
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27676,31 +27696,31 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(270) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Pluto';\n  src: url(" + __webpack_require__(271) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Skinny-Regular';\n  src: url(" + __webpack_require__(271) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n@font-face {\n  font-family: 'Pluto';\n  src: url(" + __webpack_require__(272) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "public/fonts/Skinny-Regular.ttf";
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "public/fonts/pluto.ttf";
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(273);
+	var content = __webpack_require__(274);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(230)(content, {});
@@ -27720,7 +27740,7 @@
 	}
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(229)();
@@ -27728,22 +27748,16 @@
 
 
 	// module
-	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(274) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
+	exports.push([module.id, "@-webkit-keyframes shooting-star {\n  from {\n    left: 0; }\n  to {\n    left: 100vw; } }\n\n@-webkit-keyframes shooting-star-off-angle {\n  from {\n    top: 0; }\n  to {\n    top: 100%; } }\n\n@-webkit-keyframes shoot-lazer {\n  from {\n    bottom: 0; }\n  to {\n    bottom: 100vh; } }\n\n@-webkit-keyframes expand-blackhole {\n  from {\n    width: 0;\n    height: 0;\n    -webkit-transform: rotate(0deg); }\n  to {\n    width: 700px;\n    height: 700px;\n    -webkit-transform: rotate(360deg); } }\n\nbody {\n  height: 100vh;\n  width: 99vw;\n  background: #000;\n  color: #fff; }\n  body section {\n    overflow: hidden;\n    position: relative;\n    height: 100%;\n    margin: 0 auto;\n    background-size: cover;\n    image-rendering: crisp-edges; }\n    body section .close-mountains {\n      position: absolute;\n      width: 100px;\n      height: 100px;\n      background: blue;\n      top: 50;\n      right: 50; }\n    body section .mountains {\n      position: absolute;\n      bottom: -60vh;\n      height: 90vh;\n      width: 100%;\n      z-index: 100;\n      background: url(" + __webpack_require__(275) + ") 0 0 no-repeat;\n      background-size: cover;\n      filter: drop-shadow(-1px -48px 49px #222);\n      -webkit-filter: drop-shadow(-1px -48px 49px #222);\n      transition: bottom 1s ease-in;\n      -webkit-transition: bottom 1s ease-in; }\n      body section .mountains.expanded {\n        bottom: 0vw; }\n      body section .mountains > div {\n        position: relative;\n        top: 30vh;\n        height: 70vh; }\n    body section .mountains-enter {\n      opacity: 0.01; }\n    body section .mountains-enter.mountains-enter-active {\n      opacity: 1;\n      transition: opacity 2s ease-in; }\n  body content {\n    clear: both; }\n  body a {\n    color: #fff; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
-
-/***/ },
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e148749cdfc49494c5a92e43bf9611e2.png";
+	module.exports = __webpack_require__.p + "251641199f144ceb4252ae2b4b4daa85.jpeg";
 
 /***/ }
 /******/ ]);
