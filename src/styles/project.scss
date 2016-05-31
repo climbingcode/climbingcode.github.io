@@ -16,8 +16,10 @@ $projectsImage: '../images/projects.png';
 	.image {
 		position: relative;
 		margin: 0 auto;
-		width: 837px;
-		height: 442px;
+		max-width: 837px;
+    	max-height: 442px;
+    	width: 70vw;
+    	height: 40vw;
 		background: url($projectsImage) 0 0 no-repeat;
 	}
 	.image:hover p { opacity: 0.9; }

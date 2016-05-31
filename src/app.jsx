@@ -42,11 +42,7 @@ class Layout extends React.Component {
 		var statesObj = {};
 		var states = Object.keys(this.state);
 		states.forEach(function(key) {
-			if (parent === key) {
-				statesObj[key] = isOpen
-			} else {
-				statesObj[key] = false;
-			}
+			parent === key ? statesObj[key] = isOpen : statesObj[key] = false
 		});
 		this.setState(statesObj);
 	}

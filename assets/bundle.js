@@ -155,11 +155,7 @@
 				var statesObj = {};
 				var states = Object.keys(this.state);
 				states.forEach(function (key) {
-					if (parent === key) {
-						statesObj[key] = isOpen;
-					} else {
-						statesObj[key] = false;
-					}
+					parent === key ? statesObj[key] = isOpen : statesObj[key] = false;
 				});
 				this.setState(statesObj);
 			}
@@ -25758,7 +25754,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px;\n      float: left; }\n    nav .title .icons {\n      float: right;\n      margin: 0 35px; }\n      nav .title .icons span {\n        display: inline-block;\n        height: 30px;\n        width: 30px;\n        background: blue;\n        cursor: pointer;\n        background: url(" + __webpack_require__(230) + ") no-repeat; }\n      nav .title .icons .linkin {\n        margin-left: 10px;\n        background-position: -619px -344px; }\n      nav .title .icons .github {\n        background-position: -651px -344px; }\n", ""]);
+	exports.push([module.id, "nav {\n  position: relative;\n  z-index: 1000;\n  height: 120px; }\n  nav > div {\n    width: 300px;\n    margin: 0 5px;\n    display: inline-block;\n    vertical-align: top;\n    font-family: 'Skinny-Regular'; }\n  nav .links {\n    float: left; }\n    nav .links a {\n      margin: 0 5px;\n      font-size: 30px; }\n  nav .title {\n    float: right;\n    width: 250px; }\n    nav .title h4 {\n      margin: 0;\n      font-size: 60px; }\n    nav .title p {\n      margin: 5px 0;\n      font-size: 30px;\n      float: left; }\n    nav .title .icons {\n      float: right;\n      margin: 0 35px; }\n      nav .title .icons span {\n        display: inline-block;\n        height: 30px;\n        width: 30px;\n        background: blue;\n        cursor: pointer;\n        background: url(" + __webpack_require__(230) + ") no-repeat; }\n      nav .title .icons .linkin {\n        margin-left: 10px;\n        background-position: -619px -344px; }\n      nav .title .icons .github {\n        background-position: -651px -344px; }\n\n@media (max-width: 768px) {\n  #content {\n    width: 95%; }\n  nav .title {\n    float: none;\n    display: block; }\n  nav .links {\n    float: none;\n    margin: 0;\n    display: block;\n    width: 100%;\n    background: #fff; }\n    nav .links a {\n      font-size: 40px;\n      color: #000;\n      width: 17%;\n      text-align: center;\n      display: inline-block;\n      margin: 0 5px; }\n      nav .links a:hover {\n        background: #000;\n        color: #fff; } }\n", ""]);
 
 	// exports
 
@@ -26665,7 +26661,7 @@
 
 
 	// module
-	exports.push([module.id, ".project {\n  position: relative;\n  font-family: 'pluto'; }\n  .project a {\n    text-decoration: none; }\n  .project h5 {\n    font-size: 16px;\n    text-align: center;\n    text-decoration: normal; }\n  .project .image {\n    position: relative;\n    margin: 0 auto;\n    width: 837px;\n    height: 442px;\n    background: url(" + __webpack_require__(247) + ") 0 0 no-repeat; }\n  .project .image:hover p {\n    opacity: 0.9; }\n  .project p {\n    opacity: 0;\n    position: absolute;\n    padding: 20px 10px;\n    margin: 0;\n    bottom: 0;\n    background: #000;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n", ""]);
+	exports.push([module.id, ".project {\n  position: relative;\n  font-family: 'pluto'; }\n  .project a {\n    text-decoration: none; }\n  .project h5 {\n    font-size: 16px;\n    text-align: center;\n    text-decoration: normal; }\n  .project .image {\n    position: relative;\n    margin: 0 auto;\n    max-width: 837px;\n    max-height: 442px;\n    width: 70vw;\n    height: 40vw;\n    background: url(" + __webpack_require__(247) + ") 0 0 no-repeat; }\n  .project .image:hover p {\n    opacity: 0.9; }\n  .project p {\n    opacity: 0;\n    position: absolute;\n    padding: 20px 10px;\n    margin: 0;\n    bottom: 0;\n    background: #000;\n    transition: opacity 0.5s ease-in;\n    -webkit-transition: opacity 0.5s ease-in; }\n", ""]);
 
 	// exports
 
