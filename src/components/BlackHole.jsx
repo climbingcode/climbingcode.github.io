@@ -2,6 +2,8 @@ import React from 'react';
 
 import 'styles/blackhole.scss';
 
+import ContactController from './ContactController.jsx';
+
 class BlackHole extends React.Component {
 	
 	constructor(props) {
@@ -11,7 +13,7 @@ class BlackHole extends React.Component {
 	render() {
 		return (
 			<div className="black-hole">
-				{this.props.children}
+				<ContactController/>
 			</div>
 		)
 	}

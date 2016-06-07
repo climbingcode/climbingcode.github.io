@@ -1,6 +1,10 @@
 'use strict';
 
 import React from 'react';
+import DesktopApp from './DesktopApp.jsx';
+import MobileApp from './MobileApp.jsx';
+
+// Router
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
@@ -24,94 +28,50 @@ import 'styles/fonts/fonts.scss';
 import 'styles/main.scss';
 
 
-class Layout extends React.Component {
+class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		// Default values
-		this._renderIn = this._renderIn.bind(this);
 		this.state = {
-			mountains: false,
-			carousel: false,
-			blackHole: false,
-			spaceInvaders: false
+			viewPort: "desktop",
+			mobileSize: 768
 		}
 	}
 
-	_renderIn(parent, isOpen) {
-		var statesObj = {};
-		var states = Object.keys(this.state);
-		states.forEach(function(key) {
-			parent === key ? statesObj[key] = isOpen : statesObj[key] = false
+	mobileOrDesktop() {
+		var windowWidth = window.innerWidth;
+		var medium = windowWidth > this.state.mobileSize ? 'desktop' : 'mobile';
+		console.log(medium);
+		this.setState({
+			viewPort: medium
 		});
-		this.setState(statesObj);
 	}
 
-	renderChildren() {
-
-		if (this.state.mountains) {
-			return 	(<Mountains 
-						key="mountains"
-						children={this.props.children} 
-						expanded={this.state.mountains}
-					/>);
-		} else if (this.state.carousel) {
-			return	[<Mountains 
-						key="mountains"
-					/>,
-					<Carousel
-						key="carousel"
-						children={this.props.children}
-						expanded={this.state.carousel}
-					/>];
-
-		} else if (this.state.spaceInvaders) {
-			return	[<Mountains 
-						key="mountains"
-					/>,
-					<SpaceInvaders
-						key="space-invaders"
-						children={this.props.children}
-						expanded={this.state.carousel}
-					/>];
-		} else if (this.state.blackHole) {
-			return	[<Mountains 
-						key="mountains"
-					/>,
-					<BlackHole
-						key="black-hole"
-						children={this.props.children}
-						expanded={this.state.carousel}
-					/>];
-		} else {
-			return (<Mountains 
-						key="mountains"
-					/>);
-		}
+	componentDidMount() {
+		window.addEventListener('load', this.mobileOrDesktop.bind(this), false);
+		window.addEventListener('resize', this.mobileOrDesktop.bind(this), false);
 	}
 
 	render() {
 
-		var childrenNodes = this.renderChildren();
+		// display correct app based on size of screen
+
+		var viewPortApp = this.state.viewPort === 'desktop' ? <DesktopApp/> : <MobileApp/>
 
 		return (
-
-			<div>
-				<Nav renderIn={this._renderIn}/>
-				<content>
-					{ childrenNodes }			
-				</content>
+			<content>
 				<Stars/>
-				<Footer/>
-			</div>
+				{viewPortApp}
+			</content>
 
 		)
+
 	}
 }
 
 render	(	
 			<Router history={browserHistory}>
-				<Route name="app" path="/" component={Layout}>
+				<Route name="app" path="/" component={App}>
 					<Route name="about" path="/about" component={About}/>
 					<Route name="skills" path="/skills" component={Skills}/>	
 					<Route name="projects" path="/projects" component={Projects}/>
@@ -121,6 +81,9 @@ render	(
 			</Router>, 
 			document.getElementById('content') 
 		);
+
+
+
 
 
 

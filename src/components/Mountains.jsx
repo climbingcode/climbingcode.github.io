@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import About from './About.jsx';
 
 class Mountains extends React.Component {
 
@@ -14,7 +15,7 @@ class Mountains extends React.Component {
 
 		return (
 			<div className={className}>
-				{this.props.children}
+				<About/>
 			</div>
 		)
 	}

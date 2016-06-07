@@ -1,0 +1,26 @@
+.scrolling-text {
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	font-weight: bold;
+	text-align: justify;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+	cursor: move;
+	.blogs {
+		position: absolute;
+		top: 80%;
+		animation: scroll 100s linear 0s infinite;
+		font-family: Arial;
+	}
+}
+
+@keyframes scroll {
+	0% { top: 80%; }
+	100% { top: -170%; }
+}

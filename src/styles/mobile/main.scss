@@ -1,0 +1,24 @@
+$sprite: '../../images/sprite.png';
+
+@media screen and (max-width: 768px) {
+	
+	body .mobile {
+		overflow: inherit;
+		.carousel {
+			position: relative;
+		}
+		.skills-container {
+			.skills {			
+				position: relative;
+				display: inline-block;
+				margin: 20px;
+				background: url($sprite) no-repeat;
+			    width: 100%;
+			    height: 100%;
+			}
+		}
+		.project {
+			
+		}
+	}
+}

@@ -2,7 +2,7 @@
 
 $sprite: '../images/sprite.png';
 
-.invader {
+.invader, .skills-container {
 	.skills {
 		position: relative;
 		background: url($sprite) no-repeat;
